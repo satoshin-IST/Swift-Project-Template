@@ -3,7 +3,7 @@
 //  UITests
 //
 //  Created by Xmartlabs SRL ( http://xmartlabs.com )
-//  Copyright © 2016 XLOrganizationName. All rights reserved.
+//  Copyright © 2018 XLOrganizationName. All rights reserved.
 //
 
 import XCTest

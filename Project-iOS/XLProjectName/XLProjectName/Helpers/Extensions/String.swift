@@ -3,7 +3,7 @@
 //  XLProjectName
 //
 //  Created by Diego Ernst on 9/7/16.
-//  Copyright © 2016 'XLOrganizationName'. All rights reserved.
+//  Copyright © 2018 'XLOrganizationName'. All rights reserved.
 //
 
 import Foundation

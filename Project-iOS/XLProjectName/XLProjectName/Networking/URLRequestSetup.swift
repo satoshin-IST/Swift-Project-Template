@@ -2,7 +2,7 @@
 //  URLRequestSetup.swift
 //  XLProjectName
 //
-//  Created by XLAuthorName ( XLAuthorWebsite )
+//  Created by XLAuthorName 
 //  Copyright © 2017 'XLOrganizationName'. All rights reserved.
 //
 

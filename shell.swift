@@ -8,11 +8,11 @@ let templateAuthor = "XLAuthorName"
 let templateUserName = "XLUserName"
 let templateOrganizationName = "XLOrganizationName"
 
-var projectName = "MyProject"
-var bundleDomain = "com.xmartlabs"
-var author = "Xmartlabs SRL"
-var userName = "xmartlabs"
-var organizationName = "Xmartlabs SRL"
+var projectName = "ProjectName"
+var bundleDomain = "jp.co.i-studio"
+var author = "[開発者名]"
+var userName = "Git UserName"
+var organizationName = "HAKUHODO i-studio, Inc"
 
 let fileManager = FileManager.default
 
