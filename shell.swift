@@ -57,22 +57,22 @@ extension NSURL {
 }
 
 func printInfo<T>(message: T)  {
-  print("\n-------------------Info:-------------------------")
-  print("\(message)")
-  print("--------------------------------------------------\n")
+    print("\n-------------------Info:-------------------------")
+    print("\(message)")
+    print("--------------------------------------------------\n")
 }
 
 func printErrorAndExit<T>(message: T) {
-  print("\n-------------------Error:-------------------------")
-  print("\(message)")
-  print("--------------------------------------------------\n")
-  exit(1)
+    print("\n-------------------Error:-------------------------")
+    print("\(message)")
+    print("--------------------------------------------------\n")
+    exit(1)
 }
 
 func checkThatProjectForlderCanBeCreated(projectURL: NSURL){
     var isDirectory: ObjCBool = true
     if fileManager.fileExists(atPath: projectURL.path!, isDirectory: &isDirectory){
-        printErrorAndExit(message: "\(projectName) \(isDirectory.boolValue ? "folder already" : "file") exists in \(runScriptPathURL.path) directory, please delete it and try again")
+        printErrorAndExit(message: "\(projectName) \(isDirectory.boolValue ? "folder already" : "file") exists in \(String(describing: runScriptPathURL.path)) directory, please delete it and try again")
     }
 }
 
@@ -86,17 +86,17 @@ func shell(args: String...) -> (output: String, exitCode: Int32) {
     task.launch()
     task.waitUntilExit()
     let data = pipe.fileHandleForReading.readDataToEndOfFile()
-    let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue) as? String ?? ""
+    let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue) as String? ?? ""
     return (output, task.terminationStatus)
 }
 
 func prompt(message: String, defaultValue: String) -> String {
-  print("\n> \(message) (or press Enter to use \(defaultValue))")
-  let line = readLine()
-  return line == nil || line == "" ? defaultValue : line!
+    print("\n> \(message) (or press Enter to use defaultValue is「\(defaultValue)」)")
+    let line = readLine()
+    return line == nil || line == "" ? defaultValue : line!
 }
 
-print("\nLet's go over some question to create your base project code!")
+print("\nLet's go over some question to generate your base project code!")
 
 projectName = prompt(message: "Project name", defaultValue: projectName)
 print(projectName)
@@ -125,15 +125,15 @@ print("\nCreating \(projectName) ...")
 while let fileURL = enumerator.nextObject() as? NSURL {
     guard !ignoredFiles.contains(fileURL.fileName) else { continue }
     if fileURL.isDirectory {
-      directories.append(fileURL)
+        directories.append(fileURL)
     }
     else {
-      fileURL.updateContent()
-      fileURL.renameIfNeeded()
+        fileURL.updateContent()
+        fileURL.renameIfNeeded()
     }
 }
 for fileURL in directories.reversed() {
-  fileURL.renameIfNeeded()
+    fileURL.renameIfNeeded()
 }
 
 //print("git init\n")
