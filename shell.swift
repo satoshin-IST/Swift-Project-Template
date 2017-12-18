@@ -5,14 +5,12 @@ import Foundation
 let templateProjectName = "XLProjectName"
 let templateBundleDomain = "XLOrganizationIdentifier"
 let templateAuthor = "XLAuthorName"
-let templateAuthorWebsite = "XLAuthorWebsite"
 let templateUserName = "XLUserName"
 let templateOrganizationName = "XLOrganizationName"
 
 var projectName = "MyProject"
 var bundleDomain = "com.xmartlabs"
 var author = "Xmartlabs SRL"
-var authorWebsite = "https://xmartlabs.com"
 var userName = "xmartlabs"
 var organizationName = "Xmartlabs SRL"
 
@@ -53,7 +51,6 @@ extension NSURL {
         newContent = newContent.replacingOccurrences(of: templateBundleDomain, with: bundleDomain)
         newContent = newContent.replacingOccurrences(of: templateAuthor, with: author)
         newContent = newContent.replacingOccurrences(of: templateUserName, with: userName)
-        newContent = newContent.replacingOccurrences(of: templateAuthorWebsite, with: authorWebsite)
         newContent = newContent.replacingOccurrences(of: templateOrganizationName, with: organizationName)
         try! newContent.write(to: self as URL, atomically: true, encoding: String.Encoding.utf8)
     }
@@ -111,7 +108,6 @@ checkThatProjectForlderCanBeCreated(projectURL: newProjectFolderURL)
 
 bundleDomain = prompt(message: "Bundle domain", defaultValue: bundleDomain)
 author       = prompt(message: "Author", defaultValue: author)
-authorWebsite  = prompt(message: "Author Website", defaultValue: authorWebsite)
 userName     = prompt(message: "Github username", defaultValue: userName)
 organizationName = prompt(message: "Organization Name", defaultValue: organizationName)
 
@@ -140,14 +136,14 @@ for fileURL in directories.reversed() {
   fileURL.renameIfNeeded()
 }
 
-print("git init\n")
-print(shell(args: "git", "init").output)
-print("git add .\n")
-print(shell(args: "git", "add", ".").output)
-print("git commit -m 'Initial commit'\n")
-print(shell(args: "git", "commit", "-m", "'Initial commit'").output)
-print("git remote add origin git@github.com:\(userName)/\(projectName).git\n")
-print(shell(args: "git", "remote", "add", "origin", "git@github.com:\(userName)/\(projectName).git").output)
+//print("git init\n")
+//print(shell(args: "git", "init").output)
+//print("git add .\n")
+//print(shell(args: "git", "add", ".").output)
+//print("git commit -m 'Initial commit'\n")
+//print(shell(args: "git", "commit", "-m", "'Initial commit'").output)
+//print("git remote add origin git@github.com:\(userName)/\(projectName).git\n")
+//print(shell(args: "git", "remote", "add", "origin", "git@github.com:\(userName)/\(projectName).git").output)
 print("pod install --project-directory=\(projectName)\n")
 print(shell(args: "pod", "install", "--project-directory=\(projectName)").output)
 print("open \(projectName)/\(projectName).xcworkspace\n")
