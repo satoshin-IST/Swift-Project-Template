@@ -2,85 +2,44 @@
 
 import Foundation
 
-let templateProjectName = "XLProjectName"
-let templateBundleDomain = "XLOrganizationIdentifier"
-let templateAuthor = "XLAuthorName"
-let templateUserName = "XLUserName"
-let templateOrganizationName = "XLOrganizationName"
+// MARK: - Structs
 
-var projectName = "ProjectName"
-var bundleDomain = "jp.co.i-studio"
-var author = "[開発者名]"
-var userName = "Git UserName"
-var organizationName = "HAKUHODO i-studio, Inc"
-
-let fileManager = FileManager.default
-
-let runScriptPathURL = NSURL(fileURLWithPath: fileManager.currentDirectoryPath, isDirectory: true)
-let currentScriptPathURL = NSURL(fileURLWithPath: NSURL(fileURLWithPath: CommandLine.arguments[0], relativeTo: runScriptPathURL as URL).deletingLastPathComponent!.path, isDirectory: true)
-let iOSProjectTemplateForlderURL = NSURL(fileURLWithPath: "Project-iOS", relativeTo: currentScriptPathURL as URL)
-var newProjectFolderPath = ""
-let ignoredFiles = [".DS_Store", "UserInterfaceState.xcuserstate"]
-
-extension NSURL {
-    var fileName: String {
-        var fileName: AnyObject?
-        try! getResourceValue(&fileName, forKey: URLResourceKey.nameKey)
-        return fileName as! String
-    }
-    
-    var isDirectory: Bool {
-        var isDirectory: AnyObject?
-        try! getResourceValue(&isDirectory, forKey: URLResourceKey.isDirectoryKey)
-        return isDirectory as! Bool
-    }
-    
-    func renameIfNeeded() {
-        if let _ = fileName.range(of: "XLProjectName") {
-            let renamedFileName = fileName.replacingOccurrences(of: "XLProjectName", with: projectName)
-            try! FileManager.default.moveItem(at: self as URL, to: NSURL(fileURLWithPath: renamedFileName, relativeTo: deletingLastPathComponent) as URL)
-        }
-    }
-    
-    func updateContent() {
-        guard let path = path, let content = try? String(contentsOfFile: path, encoding: String.Encoding.utf8) else {
-            print("ERROR READING: \(self)")
-            return
-        }
-        var newContent = content.replacingOccurrences(of: templateProjectName, with: projectName)
-        newContent = newContent.replacingOccurrences(of: templateBundleDomain, with: bundleDomain)
-        newContent = newContent.replacingOccurrences(of: templateAuthor, with: author)
-        newContent = newContent.replacingOccurrences(of: templateUserName, with: userName)
-        newContent = newContent.replacingOccurrences(of: templateOrganizationName, with: organizationName)
-        try! newContent.write(to: self as URL, atomically: true, encoding: String.Encoding.utf8)
-    }
+struct Templates {
+    static let projectName = "XLProjectName"
+    static let bundleDomain = "XLOrganizationIdentifier"
+    static let author = "XLAuthorName"
+    static let userName = "XLUserName"
+    static let organizationName = "XLOrganizationName"
 }
 
-func printInfo<T>(message: T)  {
+struct ProjectSettings {
+    var name: String
+    var bundleDomain: String
+    var author: String
+    var userName: String
+    var organizationName: String
+}
+
+// MARK: - Functions
+
+public func printInfo<T>(message: T)  {
     print("\n-------------------Info:-------------------------")
     print("\(message)")
     print("--------------------------------------------------\n")
 }
 
-func printErrorAndExit<T>(message: T) {
+public func printErrorAndExit<T>(message: T) {
     print("\n-------------------Error:-------------------------")
     print("\(message)")
     print("--------------------------------------------------\n")
     exit(1)
 }
 
-func checkThatProjectForlderCanBeCreated(projectURL: NSURL){
-    var isDirectory: ObjCBool = true
-    if fileManager.fileExists(atPath: projectURL.path!, isDirectory: &isDirectory){
-        printErrorAndExit(message: "\(projectName) \(isDirectory.boolValue ? "folder already" : "file") exists in \(String(describing: runScriptPathURL.path)) directory, please delete it and try again")
-    }
-}
-
-func shell(args: String...) -> (output: String, exitCode: Int32) {
+public func shell(path: String, args: String...) -> (output: String, exitCode: Int32) {
     let task = Process()
     task.launchPath = "/usr/bin/env"
     task.arguments = args
-    task.currentDirectoryPath = newProjectFolderPath
+    task.currentDirectoryPath = path
     let pipe = Pipe()
     task.standardOutput = pipe
     task.launch()
@@ -90,50 +49,142 @@ func shell(args: String...) -> (output: String, exitCode: Int32) {
     return (output, task.terminationStatus)
 }
 
-func prompt(message: String, defaultValue: String) -> String {
+public func prompt(message: String, defaultValue: String) -> String {
     print("\n> \(message) (or press Enter to use defaultValue is「\(defaultValue)」)")
     let line = readLine()
     return line == nil || line == "" ? defaultValue : line!
 }
 
+// MARK: - Extension
+
+extension NSURL {
+    var fileName: String? {
+        var fileName: AnyObject?
+        do {
+            try getResourceValue(&fileName, forKey:  URLResourceKey.nameKey)
+        } catch let error as NSError {
+            printErrorAndExit(message: error.localizedDescription)
+            return nil
+        }
+        return fileName as? String
+    }
+    
+    var isDirectory: Bool {
+        var isDirectory: AnyObject?
+        do {
+            try getResourceValue(&isDirectory, forKey:  URLResourceKey.isDirectoryKey)
+        } catch let error as NSError {
+            printErrorAndExit(message: error.localizedDescription)
+            return false
+        }
+        return isDirectory as? Bool ?? false
+    }
+    
+    func renameIfNeeded(_ projectName: String) {
+        guard let fileName = fileName, let _ = fileName.range(of: Templates.projectName) else {
+            return
+        }
+        let renamedFileName = fileName.replacingOccurrences(of: Templates.projectName, with: projectName)
+        do {
+            try FileManager.default.moveItem(at: self as URL, to: NSURL(fileURLWithPath: renamedFileName, relativeTo: deletingLastPathComponent) as URL)
+        } catch let error as NSError {
+            printErrorAndExit(message: error.localizedDescription)
+        }
+    }
+    
+    func updateContent(settings: ProjectSettings) {
+        guard let path = path, let content = try? String(contentsOfFile: path, encoding: String.Encoding.utf8) else {
+            print("ERROR READING: \(self)")
+            return
+        }
+        var newContent = content.replacingOccurrences(of: Templates.projectName, with: settings.name)
+        newContent = newContent.replacingOccurrences(of: Templates.bundleDomain, with: settings.bundleDomain)
+        newContent = newContent.replacingOccurrences(of: Templates.author, with: settings.author)
+        newContent = newContent.replacingOccurrences(of: Templates.userName, with: settings.userName)
+        newContent = newContent.replacingOccurrences(of: Templates.organizationName, with: settings.organizationName)
+        try! newContent.write(to: self as URL, atomically: true, encoding: String.Encoding.utf8)
+    }
+}
+
+// MARK: - Start Configure
+
+var projectSettings = ProjectSettings(name: "ProjectName",
+                                      bundleDomain: "jp.co.i-studio",
+                                      author: "[開発者名]",
+                                      userName: "Git UserName",
+                                      organizationName: "HAKUHODO i-studio, Inc")
+
+let fileManager = FileManager.default
+let runScriptPathURL = NSURL(fileURLWithPath: fileManager.currentDirectoryPath, isDirectory: true)
+
+guard let firstARG = CommandLine.arguments.first else {
+    fatalError()
+}
+
+guard let path = NSURL(fileURLWithPath: firstARG, relativeTo: runScriptPathURL as URL).deletingLastPathComponent?.path else {
+    fatalError()
+}
+
+let currentScriptPathURL = NSURL(fileURLWithPath: path, isDirectory: true)
+let iOSProjectTemplateForlderURL = NSURL(fileURLWithPath: "Project-iOS", relativeTo: currentScriptPathURL as URL)
+let ignoredFiles = [".DS_Store", "UserInterfaceState.xcuserstate"]
+
+// MARK: - Start project Settings Input
+
 print("\nLet's go over some question to generate your base project code!")
 
-projectName = prompt(message: "Project name", defaultValue: projectName)
-print(projectName)
+projectSettings.name = prompt(message: "Project name", defaultValue: projectSettings.name)
 
-// Check if folder already exists
-let newProjectFolderURL = NSURL(fileURLWithPath: projectName, relativeTo: runScriptPathURL as URL)
-newProjectFolderPath = newProjectFolderURL.path!
-checkThatProjectForlderCanBeCreated(projectURL: newProjectFolderURL)
+//Check if folder already exists
+let newProjectFolderURL = NSURL(fileURLWithPath: projectSettings.name, relativeTo: runScriptPathURL as URL)
+guard let newProjectFolderPath = newProjectFolderURL.path, !newProjectFolderPath.isEmpty  else {
+    printErrorAndExit(message: "newProjectFolderPath failure Unwrapped or isEmpty")
+    fatalError()
+}
+var isDirectory: ObjCBool = true
+if fileManager.fileExists(atPath: newProjectFolderPath, isDirectory: &isDirectory){
+    printErrorAndExit(message: "\(isDirectory.boolValue ? "folder already" : "file") exists in \(String(describing: runScriptPathURL.path)) directory, please delete it and try again")
+}
 
-bundleDomain = prompt(message: "Bundle domain", defaultValue: bundleDomain)
-author       = prompt(message: "Author", defaultValue: author)
-userName     = prompt(message: "Github username", defaultValue: userName)
-organizationName = prompt(message: "Organization Name", defaultValue: organizationName)
+projectSettings.bundleDomain = prompt(message: "Bundle domain", defaultValue: projectSettings.bundleDomain)
+projectSettings.author       = prompt(message: "Author", defaultValue: projectSettings.author)
+projectSettings.userName     = prompt(message: "Github username", defaultValue: projectSettings.userName)
+projectSettings.organizationName = prompt(message: "Organization Name", defaultValue: projectSettings.organizationName)
 
-// Copy template folder to a new folder inside run script url called projectName
+// MARK: - Copy template folder to a new folder inside run script url called projectName
+
 do {
     try fileManager.copyItem(at: iOSProjectTemplateForlderURL as URL, to: newProjectFolderURL as URL)
 } catch let error as NSError {
     printErrorAndExit(message: error.localizedDescription)
 }
 
-// rename files and update content
+// MARK: - Rename files and update content
+
 let enumerator = fileManager.enumerator(at: newProjectFolderURL as URL, includingPropertiesForKeys: [.nameKey, .isDirectoryKey], options: [], errorHandler: nil)!
 var directories = [NSURL]()
-print("\nCreating \(projectName) ...")
-while let fileURL = enumerator.nextObject() as? NSURL {
-    guard !ignoredFiles.contains(fileURL.fileName) else { continue }
+
+print("\nCreating \(projectSettings.name) ...")
+
+for file in enumerator.allObjects {
+    guard let fileURL = file as? NSURL else {
+        print("unwrapped failure", file)
+        continue
+    }
+    guard let fileName = fileURL.fileName,  !ignoredFiles.contains(fileName) else {
+        continue
+    }
+    
     if fileURL.isDirectory {
         directories.append(fileURL)
-    }
-    else {
-        fileURL.updateContent()
-        fileURL.renameIfNeeded()
+    } else {
+        fileURL.updateContent(settings: projectSettings)
+        fileURL.renameIfNeeded(projectSettings.name)
     }
 }
+
 for fileURL in directories.reversed() {
-    fileURL.renameIfNeeded()
+    fileURL.renameIfNeeded(projectSettings.name)
 }
 
 //print("git init\n")
@@ -144,7 +195,10 @@ for fileURL in directories.reversed() {
 //print(shell(args: "git", "commit", "-m", "'Initial commit'").output)
 //print("git remote add origin git@github.com:\(userName)/\(projectName).git\n")
 //print(shell(args: "git", "remote", "add", "origin", "git@github.com:\(userName)/\(projectName).git").output)
-print("pod install --project-directory=\(projectName)\n")
-print(shell(args: "pod", "install", "--project-directory=\(projectName)").output)
-print("open \(projectName)/\(projectName).xcworkspace\n")
-print(shell(args: "open", "\(projectName)/\(projectName).xcworkspace").output)
+
+var name = projectSettings.name
+print("pod install --project-directory=\(name)\n")
+print(shell(path: newProjectFolderPath, args: "pod", "install", "--project-directory=\(name)").output)
+print("open \(name)/\(name).xcworkspace\n")
+print(shell(path: newProjectFolderPath, args: "open", "\(name)/\(name).xcworkspace").output)
+
