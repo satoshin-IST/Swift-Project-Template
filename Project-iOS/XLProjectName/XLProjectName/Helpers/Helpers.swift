@@ -2,8 +2,8 @@
 //  Helpers.swift
 //  XLProjectName
 //
-//  Created by XLAuthorName ( XLAuthorWebsite )
-//  Copyright © 2016 'XLOrganizationName'. All rights reserved.
+//  Created by XLAuthorName 
+//  Copyright © 2018 'XLOrganizationName'. All rights reserved.
 //
 
 import Foundation

@@ -1,14 +1,15 @@
 //
-//  Tests.swift
-//  Tests
+//  GenerateTemplateProjectTests.swift
+//  GenerateTemplateProjectTests
 //
-//  Created by Xmartlabs SRL ( http://xmartlabs.com )
-//  Copyright © 2018 XLOrganizationName. All rights reserved.
+//  Created by 佐藤 慎 on 2018/01/10.
+//  Copyright © 2018年 i-studio development team. All rights reserved.
 //
 
 import XCTest
+@testable import GenerateTemplateProject
 
-class Tests: XCTestCase {
+class GenerateTemplateProjectTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
