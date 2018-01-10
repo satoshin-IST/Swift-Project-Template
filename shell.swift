@@ -148,7 +148,7 @@ if fileManager.fileExists(atPath: newProjectFolderPath, isDirectory: &isDirector
 
 projectSettings.bundleDomain = prompt(message: "Bundle domain", defaultValue: projectSettings.bundleDomain)
 projectSettings.author       = prompt(message: "Author", defaultValue: projectSettings.author)
-projectSettings.userName     = prompt(message: "Github username", defaultValue: projectSettings.userName)
+projectSettings.userName     = prompt(message: "Git username", defaultValue: projectSettings.userName)
 projectSettings.organizationName = prompt(message: "Organization Name", defaultValue: projectSettings.organizationName)
 
 // MARK: - Copy template folder to a new folder inside run script url called projectName
