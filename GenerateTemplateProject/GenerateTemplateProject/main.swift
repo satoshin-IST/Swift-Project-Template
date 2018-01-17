@@ -203,7 +203,7 @@ for fileURL in directories.reversed() {
 //print(shell(args: "git", "remote", "add", "origin", "git@github.com:\(userName)/\(projectName).git").output)
 
 var name = projectSettings.name
-print("pod install --project-directory=\(name)\n")
+print("pod install --project-directory=\(name) --no-repo-update\n")
 print(shell(path: newProjectFolderPath, args: "pod", "install", "--project-directory=\(name)").output)
 print("open \(name)/\(name).xcworkspace\n")
 print(shell(path: newProjectFolderPath, args: "open", "\(name)/\(name).xcworkspace").output)

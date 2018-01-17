@@ -42,6 +42,9 @@ final class User: Object {
     }
 }
 
+protocol Decodable {
+}
+
 extension User: Decodable, OperaDecodable {
 
     static func decode(_ data: Any) throws -> User {
