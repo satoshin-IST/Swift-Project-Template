@@ -12,7 +12,7 @@ import Alamofire
 
 extension RouteType {
 
-    var baseURL: URL { return Constants.Network.baseUrl }
+    var baseURL: URL { return Constants.Network.baseURL }
     var manager: ManagerType { return NetworkManager.singleton  }
     var retryCount: Int { return 0 }
 }
