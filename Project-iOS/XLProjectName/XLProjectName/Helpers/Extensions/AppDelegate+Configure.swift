@@ -1,5 +1,5 @@
 //
-//  AppDelegate+XLProjectName.swift
+//  AppDelegate+Configure.swift
 //  XLProjectName
 //
 //  Created by XLAuthorName 
