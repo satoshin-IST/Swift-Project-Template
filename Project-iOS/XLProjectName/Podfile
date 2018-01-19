@@ -5,28 +5,55 @@ use_frameworks!
 
 # Add Application pods here
 def app_pods
+
+    #=== アドテクチーム必須ライブラリ
+    #
+    #  品質向上とチームのベースラインを揃えるために必ず導入するライブラリです
+    #
+    pod 'SwiftLint', '~> 0.24.2'
+    pod 'R.swift', '~> 3.0'
+
+    #=== アドテクチーム推奨ライブラリ
+    #
+    #  基本的な処理に関しては以下のライブラリで事足りる想定です
+    #  案件に合わせてOn/Offしてください
+    #  足りない場合はライセンスに注意して別途追加してください
+    #
     pod 'Alamofire', '~> 4.0'
     pod 'AlamofireImage', '~> 3.0'
-    pod 'AsyncSwift', '~> 2.0'
-    pod 'Crashlytics'
+    pod 'AsyncKit', '~> 2.0.1'
     pod 'Device', '~> 2.0'
-    pod 'Decodable', '~> 0.5'
-    pod 'DynamicColor', '~> 3.0'
-    #pod 'Eureka', '~> 2.0.0-beta.1'
-    pod 'Fabric', '~> 1.6'
     pod 'KeychainAccess', '~> 3.0'
     pod 'NVActivityIndicatorView', '~> 3.0'
     pod 'OperaSwift', '~> 2.0'
-    pod 'R.swift', '~> 3.0'
     pod 'RealmSwift', '~> 2.0'
-    pod 'Result', '~> 3.0'
+    pod 'Unbox', '~> 2.5.0'
+    
+    #=== 利用をお客様に確認するもの
+    #
+    #  クラッシュレポートやGAなどアカウント等を発行してplistの登録が必要なものです
+    #
+    pod 'Crashlytics'
+    pod 'Fabric', '~> 1.6'
+
+    #=== 改造前に使われていたライブラリ群
+    #
+    #  ※Rx関係は基本非推奨ですが以下の場合はガンガン利用して知見を増やしてください。
+    #  -「Rxの無い実装は考えられない」というイケメンがチームにいる場合
+    #  - 保守と運用を気にしなくていい案件の場合
+    #
+    #pod 'AsyncSwift', '~> 2.0'
+    pod 'Decodable', '~> 0.5'
+    #pod 'DynamicColor', '~> 3.0'
+    #pod 'Eureka', '~> 2.0.0-beta.1'
     pod 'RxAlamofire', '~> 3.0'
     pod 'RxCocoa', '~> 3.0'
     pod 'RxSwift', '~> 3.0'
     #pod 'SwiftDate', '~> 4.0'
-    pod 'WebLinking', :git => 'https://github.com/kylef/WebLinking.swift', :branch => 'master'
-    pod 'XLSwiftKit', '~> 2.0'
-    pod 'SwiftLint', '~> 0.24.2'
+    #pod 'Result', '~> 3.0'
+    #pod 'WebLinking', :git => 'https://github.com/kylef/WebLinking.swift', :branch => 'master'
+    #pod 'XLSwiftKit', '~> 2.0'
+
 end
 
 def testing_pods

@@ -1,8 +1,8 @@
 //
 //  main.swift
-//  GenerateTemplateProject
+//  Skelton
 //
-//  Created by 佐藤 慎 on 2018/01/10.
+//  Created by 佐藤 慎 on 2018/01/19.
 //  Copyright © 2018年 i-studio development team. All rights reserved.
 //
 
@@ -99,16 +99,25 @@ extension NSURL {
     }
     
     func updateContent(settings: ProjectSettings) {
-        guard let path = path, let content = try? String(contentsOfFile: path, encoding: String.Encoding.utf8) else {
+        guard let path = path else {
             print("ERROR READING: \(self)")
             return
         }
+        guard let content = try? String(contentsOfFile: path, encoding: String.Encoding.utf8) else {
+            return
+        }
+        
         var newContent = content.replacingOccurrences(of: Templates.projectName, with: settings.name)
         newContent = newContent.replacingOccurrences(of: Templates.bundleDomain, with: settings.bundleDomain)
         newContent = newContent.replacingOccurrences(of: Templates.author, with: settings.author)
         newContent = newContent.replacingOccurrences(of: Templates.userName, with: settings.userName)
         newContent = newContent.replacingOccurrences(of: Templates.organizationName, with: settings.organizationName)
-        try! newContent.write(to: self as URL, atomically: true, encoding: String.Encoding.utf8)
+        
+        do {
+            try newContent.write(to: self as URL, atomically: true, encoding: String.Encoding.utf8)
+        } catch {
+            print("ERROR Write Content: \(self)")
+        }
     }
 }
 

@@ -1,1 +1,0 @@
-./GenerateTemplateProject/GenerateTemplateProject/main.swift
