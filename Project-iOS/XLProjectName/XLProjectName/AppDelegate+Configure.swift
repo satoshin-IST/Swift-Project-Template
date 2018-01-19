@@ -20,5 +20,4 @@ extension AppDelegate {
     func setupGoogleAnalytics() {
         // TODO:
     }
-    
 }
