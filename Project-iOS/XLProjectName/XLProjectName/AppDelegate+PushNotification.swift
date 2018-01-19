@@ -2,8 +2,8 @@
 //  AppDelegate+PushNotification.swift
 //  XLProjectName
 //
-//  Created by 佐藤 慎 on 2018/01/19.
-//  Copyright © 2018年 'XLOrganizationName'. All rights reserved.
+//  Created by XLAuthorName
+//  Copyright © 2018 XLOrganizationName. All rights reserved.
 //
 
 import Foundation

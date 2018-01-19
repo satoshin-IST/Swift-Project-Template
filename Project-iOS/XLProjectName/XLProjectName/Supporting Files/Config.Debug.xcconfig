@@ -1,0 +1,11 @@
+//
+//  Config.Debug.xcconfig
+//  XLProjectName
+//
+//  Created by XLAuthorName
+//  Copyright © 2018 XLOrganizationName. All rights reserved.
+//
+#include "Pods/Target Support Files/Pods-XLProjectName/Pods-XLProjectName.debug.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER=XLOrganizationIdentifier.XLProjectName.debug
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "DEBUG" "-D" "COCOAPODS" "-Xfrontend" "-warn-long-function-bodies=150"
