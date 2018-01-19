@@ -1,5 +1,5 @@
 //
-//  UIDevice.swift
+//  UIDeviceExtension.swift
 //  XLProjectName
 //
 //  Created by XLAuthorName 
