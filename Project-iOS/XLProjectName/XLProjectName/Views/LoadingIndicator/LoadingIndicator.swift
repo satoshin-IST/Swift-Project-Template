@@ -23,11 +23,11 @@ class LoadingIndicator {
         minimumVisibleTime: TimeInterval = LoadingIndicator.minimumVisibleTime,
         displayTimeThreshold: TimeInterval = LoadingIndicator.displayTimeThreshold) {
 
-        LoadingIndicatorManager.sharedInstance.show(message: message, minimumVisibleTime: minimumVisibleTime, displayTimeThreshold: displayTimeThreshold)
+        LoadingIndicatorService.sharedInstance.show(message: message, minimumVisibleTime: minimumVisibleTime, displayTimeThreshold: displayTimeThreshold)
     }
 
     static func hide() {
-        LoadingIndicatorManager.sharedInstance.hide()
+        LoadingIndicatorService.sharedInstance.hide()
     }
 
 }

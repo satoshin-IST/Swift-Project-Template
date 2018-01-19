@@ -1,5 +1,5 @@
 //
-//  UIImageView.swift
+//  UIImageViewAlamofireExtension.swift
 //  XLProjectName
 //
 //  Created by XLAuthorName 

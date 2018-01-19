@@ -1,5 +1,5 @@
 //
-//  LoadingIndicatorManager.swift
+//  LoadingIndicatorService.swift
 //  XLProjectName
 //
 //  Created by Diego Ernst on 9/2/16.
@@ -26,9 +26,9 @@ class ActivityData {
 
 class PresenterViewController: UIViewController, NVActivityIndicatorViewable { }
 
-class LoadingIndicatorManager {
+class LoadingIndicatorService {
 
-    static let sharedInstance = LoadingIndicatorManager()
+    static let sharedInstance = LoadingIndicatorService()
 
     fileprivate let presenter = PresenterViewController()
     fileprivate var showActivityTimer: Timer?
@@ -41,7 +41,7 @@ class LoadingIndicatorManager {
         let data = ActivityData(message: message, minimumVisibleTime: minimumVisibleTime, displayTimeThreshold: displayTimeThreshold)
         guard showActivityTimer == nil else { return }
         userWantsToStopActivity = false
-        showActivityTimer = scheduleTimer(data.displayTimeThreshold, selector: #selector(LoadingIndicatorManager.showActivityTimerFired(_:)), data: data)
+        showActivityTimer = scheduleTimer(data.displayTimeThreshold, selector: #selector(LoadingIndicatorService.showActivityTimerFired(_:)), data: data)
     }
 
     func hide() {
@@ -69,7 +69,7 @@ class LoadingIndicatorManager {
 
     fileprivate func showActivity(_ data: ActivityData) {
         presenter.startAnimating(LoadingIndicator.size, message: data.message, type: LoadingIndicator.type, color: LoadingIndicator.color, padding: nil)
-        hideActivityTimer = scheduleTimer(data.minimumVisibleTime, selector: #selector(LoadingIndicatorManager.hideActivityTimerFired(_:)), data: nil)
+        hideActivityTimer = scheduleTimer(data.minimumVisibleTime, selector: #selector(LoadingIndicatorService.hideActivityTimerFired(_:)), data: nil)
     }
 
     fileprivate func hideActivity() {
