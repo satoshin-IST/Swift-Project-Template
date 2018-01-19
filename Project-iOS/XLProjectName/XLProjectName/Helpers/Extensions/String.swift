@@ -2,8 +2,8 @@
 //  String.swift
 //  XLProjectName
 //
-//  Created by Diego Ernst on 9/7/16.
-//  Copyright © 2018 'XLOrganizationName'. All rights reserved.
+//  Created by XLAuthorName
+//  Copyright © 2018 XLOrganizationName. All rights reserved.
 //
 
 import Foundation

@@ -65,10 +65,6 @@ target 'XLProjectName' do
     app_pods
 end
 
-target 'XLProjectName-Staging' do
-    app_pods
-end
-
 target 'Tests' do
   testing_pods
 end

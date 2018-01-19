@@ -1,0 +1,11 @@
+//
+//  Config.Release.xcconfig
+//  XLProjectName
+//
+//  Created by XLAuthorName
+//  Copyright © 2018 XLOrganizationName. All rights reserved.
+//
+#include "Pods/Target Support Files/Pods-XLProjectName/Pods-XLProjectName.release.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER=XLOrganizationIdentifier.XLProjectName.release
+OTHER_SWIFT_FLAGS = $(inherited)

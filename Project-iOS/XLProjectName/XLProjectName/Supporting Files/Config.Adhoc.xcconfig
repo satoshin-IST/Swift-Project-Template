@@ -1,0 +1,11 @@
+//
+//  Config.Adhoc.xcconfig
+//  XLProjectName
+//
+//  Created by XLAuthorName
+//  Copyright © 2018 XLOrganizationName. All rights reserved.
+//
+#include "Pods/Target Support Files/Pods-XLProjectName/Pods-XLProjectName.adhoc.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER=XLOrganizationIdentifier.XLProjectName.adhoc
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "ADHOC" "-D" "COCOAPODS" "-Xfrontend" "-warn-long-function-bodies=150"
