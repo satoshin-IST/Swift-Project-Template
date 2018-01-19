@@ -8,4 +8,4 @@
 #include "Pods/Target Support Files/Pods-XLProjectName/Pods-XLProjectName.debug.xcconfig"
 
 PRODUCT_BUNDLE_IDENTIFIER=XLOrganizationIdentifier.XLProjectName.debug
-OTHER_SWIFT_FLAGS = $(inherited) "-D" "DEBUG" "-D" "COCOAPODS" "-Xfrontend" "-warn-long-function-bodies=150"
+OTHER_SWIFT_FLAGS = $(inherited) "-Onone" "-D" "DEBUG" "-D" "COCOAPODS" "-Xfrontend" "-warn-long-function-bodies=150"

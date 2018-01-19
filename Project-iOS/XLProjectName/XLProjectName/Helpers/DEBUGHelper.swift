@@ -9,7 +9,7 @@
 import Foundation
 //import XLSwiftKit
 
-public static func printLog(_ message: String, file: String = #file, line: Int = #line, function: String = #function) {
+func printLog(_ message: String, file: String = #file, line: Int = #line, function: String = #function) {
     #if DEBUG
         //        let fileURL = NSURL(fileURLWithPath: file)
         //        let fileName = fileURL.deletingPathExtension?.lastPathComponent ?? ""
@@ -18,7 +18,7 @@ public static func printLog(_ message: String, file: String = #file, line: Int =
     //    // Nothing to do if not debugging
 }
 
-public static func printJson(_ value: AnyObject) {
+func printJson(_ value: AnyObject) {
     #if DEBUG
         //        if Constants.Debug.jsonResponse {
         ////            print(JSONStringify(value))
