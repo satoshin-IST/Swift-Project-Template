@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22A269352011BB890040513E /* AppDelegate+PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A269342011BB890040513E /* AppDelegate+PushNotification.swift */; };
 		281731691C9C4BBC006237C7 /* XLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281731681C9C4BBC006237C7 /* XLViewController.swift */; };
 		2817316B1C9C4BDA006237C7 /* XLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817316A1C9C4BDA006237C7 /* XLTableViewController.swift */; };
 		281BF1A31C7B8EEF00809E3F /* UserRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BF19F1C7B8EEF00809E3F /* UserRoute.swift */; };
@@ -102,6 +103,7 @@
 		0A1759BFE439013D1F0FBED3 /* Pods-UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITests/Pods-UITests.release.xcconfig"; sourceTree = "<group>"; };
 		174F585F7E9D6B2B6BF61B19 /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C3863EDAF6B64F5C07C53A /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		22A269342011BB890040513E /* AppDelegate+PushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+PushNotification.swift"; sourceTree = "<group>"; };
 		281731681C9C4BBC006237C7 /* XLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLViewController.swift; sourceTree = "<group>"; };
 		2817316A1C9C4BDA006237C7 /* XLTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLTableViewController.swift; sourceTree = "<group>"; };
 		281BF19F1C7B8EEF00809E3F /* UserRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRoute.swift; sourceTree = "<group>"; };
@@ -256,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				2867E82A1C74C7D400FCEBBD /* AppDelegate.swift */,
+				8F0759A31D774C5C0012D681 /* AppDelegate+Configure.swift */,
+				22A269342011BB890040513E /* AppDelegate+PushNotification.swift */,
 				28C282381C7795B3003ECA4F /* Models */,
 				281BF19B1C7B8EEF00809E3F /* Networking */,
 				28C282391C7795DB003ECA4F /* Controllers */,
@@ -266,13 +270,6 @@
 				8F0759941D772AA50012D681 /* Supporting Files */,
 			);
 			path = XLProjectName;
-			sourceTree = "<group>";
-		};
-		286C922E1CBD691A00208E3B /* Decodable */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Decodable;
 			sourceTree = "<group>";
 		};
 		28C282361C779580003ECA4F /* Views */ = {
@@ -288,7 +285,6 @@
 			children = (
 				28C282401C7797CA003ECA4F /* Constants.swift */,
 				8F0759911D7728360012D681 /* Helpers.swift */,
-				286C922E1CBD691A00208E3B /* Decodable */,
 				281731671C9C494C006237C7 /* Controllers */,
 				283020A21C86130600E6EBC2 /* R-Swift */,
 				28C282411C7797CA003ECA4F /* Extensions */,
@@ -316,7 +312,6 @@
 		28C282411C7797CA003ECA4F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8F0759A31D774C5C0012D681 /* AppDelegate+Configure.swift */,
 				B23A40EF1C972C2B004AB8DC /* NSDate.swift */,
 				28A6B9D51CB5F95900682BCE /* RouteType.swift */,
 				465910AE1D80A5000022374B /* String.swift */,
@@ -926,6 +921,7 @@
 				28A6B9D61CB5F95900682BCE /* RouteType.swift in Sources */,
 				283A74511C84DF2A00E23F88 /* LoginController.swift in Sources */,
 				8F0759A11D774B390012D681 /* SessionController.swift in Sources */,
+				22A269352011BB890040513E /* AppDelegate+PushNotification.swift in Sources */,
 				28C2824A1C7798B0003ECA4F /* UserModel.swift in Sources */,
 				8F07599A1D7742CA0012D681 /* UIImageView+AlamofireImageWrapper.swift in Sources */,
 				281731691C9C4BBC006237C7 /* XLViewController.swift in Sources */,
