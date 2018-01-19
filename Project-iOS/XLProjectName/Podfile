@@ -15,8 +15,9 @@ def app_pods
 
     #=== アドテクチーム推奨ライブラリ
     #
-    #  基本的な処理に関しては以下のライブラリで事足りるはずです
-    #  足りない場合は別途追加してください
+    #  基本的な処理に関しては以下のライブラリで事足りる想定です
+    #  案件に合わせてOn/Offしてください
+    #  足りない場合はライセンスに注意して別途追加してください
     #
     pod 'Alamofire', '~> 4.0'
     pod 'AlamofireImage', '~> 3.0'
@@ -26,11 +27,8 @@ def app_pods
     pod 'NVActivityIndicatorView', '~> 3.0'
     pod 'OperaSwift', '~> 2.0'
     pod 'RealmSwift', '~> 2.0'
-    #pod 'Result', '~> 3.0'
     pod 'Unbox', '~> 2.5.0'
-    pod 'WebLinking', :git => 'https://github.com/kylef/WebLinking.swift', :branch => 'master'
-    pod 'XLSwiftKit', '~> 2.0'
-
+    
     #=== 利用をお客様に確認するもの
     #
     #  クラッシュレポートやGAなどアカウント等を発行してplistの登録が必要なものです
@@ -46,12 +44,16 @@ def app_pods
     #
     #pod 'AsyncSwift', '~> 2.0'
     pod 'Decodable', '~> 0.5'
-    pod 'DynamicColor', '~> 3.0'
+    #pod 'DynamicColor', '~> 3.0'
     #pod 'Eureka', '~> 2.0.0-beta.1'
     pod 'RxAlamofire', '~> 3.0'
     pod 'RxCocoa', '~> 3.0'
     pod 'RxSwift', '~> 3.0'
     #pod 'SwiftDate', '~> 4.0'
+    #pod 'Result', '~> 3.0'
+    #pod 'WebLinking', :git => 'https://github.com/kylef/WebLinking.swift', :branch => 'master'
+    #pod 'XLSwiftKit', '~> 2.0'
+
 end
 
 def testing_pods

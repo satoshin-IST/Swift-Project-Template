@@ -15,17 +15,17 @@ extension UIDevice {
     fileprivate static let keychainKey = "device_id"
     fileprivate static let keychain = Keychain(service: UIApplication.bundleIdentifier)
     
-    static var uniqueId: String? {
+    public static var uniqueID: String? {
         if let key = try? keychain.get(keychainKey),
             let _ = try? keychain.contains(keychainKey) {
             return key
         }
-
+        
         if let vendor = UIDevice.current.identifierForVendor {
-           let _ = try? keychain.set(vendor.uuidString, key: keychainKey)
+            let _ = try? keychain.set(vendor.uuidString, key: keychainKey)
             return vendor.uuidString
         }
-
+        
         return nil
     }
 }

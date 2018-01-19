@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22A0B39420060C28003DA2C4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0B39320060C28003DA2C4 /* main.swift */; };
-		22C1478020060D63004ED4E8 /* GenerateTemplateProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1477F20060D63004ED4E8 /* GenerateTemplateProjectTests.swift */; };
+		222DB5642011B7BB0013304C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DB5632011B7BB0013304C /* main.swift */; };
+		222DB5712011B8030013304C /* SkeltonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DB5702011B8030013304C /* SkeltonTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		22A0B38E20060C28003DA2C4 /* CopyFiles */ = {
+		222DB55E2011B7BB0013304C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,22 +24,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		22A0B39020060C28003DA2C4 /* GenerateTemplateProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GenerateTemplateProject; sourceTree = BUILT_PRODUCTS_DIR; };
-		22A0B39320060C28003DA2C4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		22C1477D20060D63004ED4E8 /* GenerateTemplateProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenerateTemplateProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22C1477F20060D63004ED4E8 /* GenerateTemplateProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateTemplateProjectTests.swift; sourceTree = "<group>"; };
-		22C1478120060D63004ED4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222DB5602011B7BB0013304C /* Skelton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Skelton; sourceTree = BUILT_PRODUCTS_DIR; };
+		222DB5632011B7BB0013304C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		222DB56E2011B8030013304C /* SkeltonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkeltonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		222DB5702011B8030013304C /* SkeltonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeltonTests.swift; sourceTree = "<group>"; };
+		222DB5722011B8030013304C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		22A0B38D20060C28003DA2C4 /* Frameworks */ = {
+		222DB55D2011B7BB0013304C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22C1477A20060D63004ED4E8 /* Frameworks */ = {
+		222DB56B2011B8030013304C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,118 +49,118 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22A0B38720060C28003DA2C4 = {
+		222DB5572011B7BB0013304C = {
 			isa = PBXGroup;
 			children = (
-				22A0B39220060C28003DA2C4 /* GenerateTemplateProject */,
-				22C1477E20060D63004ED4E8 /* GenerateTemplateProjectTests */,
-				22A0B39120060C28003DA2C4 /* Products */,
+				222DB5622011B7BB0013304C /* Skelton */,
+				222DB56F2011B8030013304C /* SkeltonTests */,
+				222DB5612011B7BB0013304C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		22A0B39120060C28003DA2C4 /* Products */ = {
+		222DB5612011B7BB0013304C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22A0B39020060C28003DA2C4 /* GenerateTemplateProject */,
-				22C1477D20060D63004ED4E8 /* GenerateTemplateProjectTests.xctest */,
+				222DB5602011B7BB0013304C /* Skelton */,
+				222DB56E2011B8030013304C /* SkeltonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22A0B39220060C28003DA2C4 /* GenerateTemplateProject */ = {
+		222DB5622011B7BB0013304C /* Skelton */ = {
 			isa = PBXGroup;
 			children = (
-				22A0B39320060C28003DA2C4 /* main.swift */,
+				222DB5632011B7BB0013304C /* main.swift */,
 			);
-			path = GenerateTemplateProject;
+			path = Skelton;
 			sourceTree = "<group>";
 		};
-		22C1477E20060D63004ED4E8 /* GenerateTemplateProjectTests */ = {
+		222DB56F2011B8030013304C /* SkeltonTests */ = {
 			isa = PBXGroup;
 			children = (
-				22C1477F20060D63004ED4E8 /* GenerateTemplateProjectTests.swift */,
-				22C1478120060D63004ED4E8 /* Info.plist */,
+				222DB5702011B8030013304C /* SkeltonTests.swift */,
+				222DB5722011B8030013304C /* Info.plist */,
 			);
-			path = GenerateTemplateProjectTests;
+			path = SkeltonTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		22A0B38F20060C28003DA2C4 /* GenerateTemplateProject */ = {
+		222DB55F2011B7BB0013304C /* Skelton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22A0B39720060C28003DA2C4 /* Build configuration list for PBXNativeTarget "GenerateTemplateProject" */;
+			buildConfigurationList = 222DB5672011B7BB0013304C /* Build configuration list for PBXNativeTarget "Skelton" */;
 			buildPhases = (
-				22A0B38C20060C28003DA2C4 /* Sources */,
-				22A0B38D20060C28003DA2C4 /* Frameworks */,
-				22A0B38E20060C28003DA2C4 /* CopyFiles */,
+				222DB55C2011B7BB0013304C /* Sources */,
+				222DB55D2011B7BB0013304C /* Frameworks */,
+				222DB55E2011B7BB0013304C /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GenerateTemplateProject;
-			productName = GenerateTemplateProject;
-			productReference = 22A0B39020060C28003DA2C4 /* GenerateTemplateProject */;
+			name = Skelton;
+			productName = Skelton;
+			productReference = 222DB5602011B7BB0013304C /* Skelton */;
 			productType = "com.apple.product-type.tool";
 		};
-		22C1477C20060D63004ED4E8 /* GenerateTemplateProjectTests */ = {
+		222DB56D2011B8030013304C /* SkeltonTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22C1478420060D63004ED4E8 /* Build configuration list for PBXNativeTarget "GenerateTemplateProjectTests" */;
+			buildConfigurationList = 222DB5732011B8030013304C /* Build configuration list for PBXNativeTarget "SkeltonTests" */;
 			buildPhases = (
-				22C1477920060D63004ED4E8 /* Sources */,
-				22C1477A20060D63004ED4E8 /* Frameworks */,
-				22C1477B20060D63004ED4E8 /* Resources */,
+				222DB56A2011B8030013304C /* Sources */,
+				222DB56B2011B8030013304C /* Frameworks */,
+				222DB56C2011B8030013304C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GenerateTemplateProjectTests;
-			productName = GenerateTemplateProjectTests;
-			productReference = 22C1477D20060D63004ED4E8 /* GenerateTemplateProjectTests.xctest */;
+			name = SkeltonTests;
+			productName = SkeltonTests;
+			productReference = 222DB56E2011B8030013304C /* SkeltonTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		22A0B38820060C28003DA2C4 /* Project object */ = {
+		222DB5582011B7BB0013304C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "i-studio development team";
 				TargetAttributes = {
-					22A0B38F20060C28003DA2C4 = {
+					222DB55F2011B7BB0013304C = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
-					22C1477C20060D63004ED4E8 = {
+					222DB56D2011B8030013304C = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 22A0B38B20060C28003DA2C4 /* Build configuration list for PBXProject "GenerateTemplateProject" */;
+			buildConfigurationList = 222DB55B2011B7BB0013304C /* Build configuration list for PBXProject "Skelton" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 22A0B38720060C28003DA2C4;
-			productRefGroup = 22A0B39120060C28003DA2C4 /* Products */;
+			mainGroup = 222DB5572011B7BB0013304C;
+			productRefGroup = 222DB5612011B7BB0013304C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				22A0B38F20060C28003DA2C4 /* GenerateTemplateProject */,
-				22C1477C20060D63004ED4E8 /* GenerateTemplateProjectTests */,
+				222DB55F2011B7BB0013304C /* Skelton */,
+				222DB56D2011B8030013304C /* SkeltonTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		22C1477B20060D63004ED4E8 /* Resources */ = {
+		222DB56C2011B8030013304C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -170,26 +170,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		22A0B38C20060C28003DA2C4 /* Sources */ = {
+		222DB55C2011B7BB0013304C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22A0B39420060C28003DA2C4 /* main.swift in Sources */,
+				222DB5642011B7BB0013304C /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22C1477920060D63004ED4E8 /* Sources */ = {
+		222DB56A2011B8030013304C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22C1478020060D63004ED4E8 /* GenerateTemplateProjectTests.swift in Sources */,
+				222DB5712011B8030013304C /* SkeltonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		22A0B39520060C28003DA2C4 /* Debug */ = {
+		222DB5652011B7BB0013304C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		22A0B39620060C28003DA2C4 /* Release */ = {
+		222DB5662011B7BB0013304C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -295,7 +295,7 @@
 			};
 			name = Release;
 		};
-		22A0B39820060C28003DA2C4 /* Debug */ = {
+		222DB5682011B7BB0013304C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -304,7 +304,7 @@
 			};
 			name = Debug;
 		};
-		22A0B39920060C28003DA2C4 /* Release */ = {
+		222DB5692011B7BB0013304C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -313,27 +313,27 @@
 			};
 			name = Release;
 		};
-		22C1478220060D63004ED4E8 /* Debug */ = {
+		222DB5742011B8030013304C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = GenerateTemplateProjectTests/Info.plist;
+				INFOPLIST_FILE = SkeltonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.i-studio.GenerateTemplateProjectTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.i-studio.SkeltonTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		22C1478320060D63004ED4E8 /* Release */ = {
+		222DB5752011B8030013304C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = GenerateTemplateProjectTests/Info.plist;
+				INFOPLIST_FILE = SkeltonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.i-studio.GenerateTemplateProjectTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.i-studio.SkeltonTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -342,34 +342,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22A0B38B20060C28003DA2C4 /* Build configuration list for PBXProject "GenerateTemplateProject" */ = {
+		222DB55B2011B7BB0013304C /* Build configuration list for PBXProject "Skelton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22A0B39520060C28003DA2C4 /* Debug */,
-				22A0B39620060C28003DA2C4 /* Release */,
+				222DB5652011B7BB0013304C /* Debug */,
+				222DB5662011B7BB0013304C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22A0B39720060C28003DA2C4 /* Build configuration list for PBXNativeTarget "GenerateTemplateProject" */ = {
+		222DB5672011B7BB0013304C /* Build configuration list for PBXNativeTarget "Skelton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22A0B39820060C28003DA2C4 /* Debug */,
-				22A0B39920060C28003DA2C4 /* Release */,
+				222DB5682011B7BB0013304C /* Debug */,
+				222DB5692011B7BB0013304C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22C1478420060D63004ED4E8 /* Build configuration list for PBXNativeTarget "GenerateTemplateProjectTests" */ = {
+		222DB5732011B8030013304C /* Build configuration list for PBXNativeTarget "SkeltonTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22C1478220060D63004ED4E8 /* Debug */,
-				22C1478320060D63004ED4E8 /* Release */,
+				222DB5742011B8030013304C /* Debug */,
+				222DB5752011B8030013304C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 22A0B38820060C28003DA2C4 /* Project object */;
+	rootObject = 222DB5582011B7BB0013304C /* Project object */;
 }

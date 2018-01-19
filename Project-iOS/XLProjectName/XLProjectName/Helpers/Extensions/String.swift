@@ -7,10 +7,11 @@
 //
 
 import Foundation
-import XLSwiftKit
+//import XLSwiftKit
+//
+//extension String: ParametrizedString {
+//
+//    public var parameterFormat: String { return "{i}" }
+//
+//}
 
-extension String: ParametrizedString {
-
-    public var parameterFormat: String { return "{i}" }
-
-}

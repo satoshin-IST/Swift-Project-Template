@@ -11,11 +11,11 @@
 		2817316B1C9C4BDA006237C7 /* XLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817316A1C9C4BDA006237C7 /* XLTableViewController.swift */; };
 		281BF1A31C7B8EEF00809E3F /* UserRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BF19F1C7B8EEF00809E3F /* UserRoute.swift */; };
 		283A74511C84DF2A00E23F88 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2823A1C7797BA003ECA4F /* LoginController.swift */; };
-		2841F1DC1CCFF55600D609CE /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FEB24B1C9875F60027D470 /* UIApplication.swift */; };
+		2841F1DC1CCFF55600D609CE /* UIApplication+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FEB24B1C9875F60027D470 /* UIApplication+Utility.swift */; };
 		2841F1DD1CCFF55600D609CE /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A40EF1C972C2B004AB8DC /* NSDate.swift */; };
 		2841F1E01CCFF55600D609CE /* XLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817316A1C9C4BDA006237C7 /* XLTableViewController.swift */; };
 		2841F1E11CCFF55600D609CE /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6B9D71CB6271800682BCE /* Manager.swift */; };
-		2841F1E31CCFF55600D609CE /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65F941C99D8AF008ED705 /* UIDevice.swift */; };
+		2841F1E31CCFF55600D609CE /* UIDevice+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65F941C99D8AF008ED705 /* UIDevice+Utility.swift */; };
 		2841F1E41CCFF55600D609CE /* RouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6B9D51CB5F95900682BCE /* RouteType.swift */; };
 		2841F1E51CCFF55600D609CE /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2823A1C7797BA003ECA4F /* LoginController.swift */; };
 		2841F1E71CCFF55600D609CE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C282481C7798B0003ECA4F /* UserModel.swift */; };
@@ -37,9 +37,9 @@
 		28C282441C7797CA003ECA4F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C282401C7797CA003ECA4F /* Constants.swift */; };
 		28C2824A1C7798B0003ECA4F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C282481C7798B0003ECA4F /* UserModel.swift */; };
 		28C69D3C1CD8E3D600F839D6 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C69D3B1CD8E3D600F839D6 /* Tests.swift */; };
-		28D65F951C99D8AF008ED705 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65F941C99D8AF008ED705 /* UIDevice.swift */; };
+		28D65F951C99D8AF008ED705 /* UIDevice+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65F941C99D8AF008ED705 /* UIDevice+Utility.swift */; };
 		28F4E15C1CDA53B5002B70A7 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4E15B1CDA53B5002B70A7 /* UITests.swift */; };
-		28FEB24C1C9875F60027D470 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FEB24B1C9875F60027D470 /* UIApplication.swift */; };
+		28FEB24C1C9875F60027D470 /* UIApplication+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FEB24B1C9875F60027D470 /* UIApplication+Utility.swift */; };
 		3C40F919E8D37A2F37F7B6B6 /* Pods_XLProjectName_Staging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5447D68A31F540904DA06E64 /* Pods_XLProjectName_Staging.framework */; };
 		4653B7F51D7A14A0002A6660 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4653B7F41D7A14A0002A6660 /* LoadingIndicator.swift */; };
 		4653B7F61D7A14A0002A6660 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4653B7F41D7A14A0002A6660 /* LoadingIndicator.swift */; };
@@ -52,8 +52,8 @@
 		8DAA6177DA9042D85860C750 /* Pods_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E57F1A373849C3308E5FA57 /* Pods_UITests.framework */; };
 		8F0759921D7728360012D681 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759911D7728360012D681 /* Helpers.swift */; };
 		8F0759931D7728360012D681 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759911D7728360012D681 /* Helpers.swift */; };
-		8F07599A1D7742CA0012D681 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759991D7742CA0012D681 /* UIImageView.swift */; };
-		8F07599B1D7742CA0012D681 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759991D7742CA0012D681 /* UIImageView.swift */; };
+		8F07599A1D7742CA0012D681 /* UIImageView+AlamofireImageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759991D7742CA0012D681 /* UIImageView+AlamofireImageWrapper.swift */; };
+		8F07599B1D7742CA0012D681 /* UIImageView+AlamofireImageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759991D7742CA0012D681 /* UIImageView+AlamofireImageWrapper.swift */; };
 		8F0759A11D774B390012D681 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759A01D774B390012D681 /* SessionController.swift */; };
 		8F0759A21D774B390012D681 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759A01D774B390012D681 /* SessionController.swift */; };
 		8F0759A41D774C5C0012D681 /* AppDelegate+Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759A31D774C5C0012D681 /* AppDelegate+Configure.swift */; };
@@ -122,11 +122,11 @@
 		28C69D391CD8E3D600F839D6 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C69D3B1CD8E3D600F839D6 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Tests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		28C69D3D1CD8E3D600F839D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28D65F941C99D8AF008ED705 /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = UIDevice.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		28D65F941C99D8AF008ED705 /* UIDevice+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "UIDevice+Utility.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		28F4E1591CDA53B5002B70A7 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F4E15B1CDA53B5002B70A7 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = UITests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		28F4E15D1CDA53B5002B70A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28FEB24B1C9875F60027D470 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = UIApplication.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		28FEB24B1C9875F60027D470 /* UIApplication+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "UIApplication+Utility.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4653B7F41D7A14A0002A6660 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingIndicator.swift; path = Views/LoadingIndicator/LoadingIndicator.swift; sourceTree = "<group>"; };
 		4653B7F71D7A1EB6002A6660 /* LoadingIndicatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingIndicatorManager.swift; path = Views/LoadingIndicator/LoadingIndicatorManager.swift; sourceTree = "<group>"; };
 		465910AE1D80A5000022374B /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 		81D1F36300BEF455B87151D4 /* Pods_ui_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ui_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E43E579EBE5CFCEEDA49C9 /* Pods-unit_tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.release.xcconfig"; sourceTree = "<group>"; };
 		8F0759911D7728360012D681 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		8F0759991D7742CA0012D681 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		8F0759991D7742CA0012D681 /* UIImageView+AlamofireImageWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+AlamofireImageWrapper.swift"; sourceTree = "<group>"; };
 		8F0759A01D774B390012D681 /* SessionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		8F0759A31D774C5C0012D681 /* AppDelegate+Configure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Configure.swift"; sourceTree = "<group>"; };
 		8F0759A61D774FC10012D681 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
@@ -316,13 +316,13 @@
 		28C282411C7797CA003ECA4F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				28A6B9D51CB5F95900682BCE /* RouteType.swift */,
-				B23A40EF1C972C2B004AB8DC /* NSDate.swift */,
-				28FEB24B1C9875F60027D470 /* UIApplication.swift */,
-				28D65F941C99D8AF008ED705 /* UIDevice.swift */,
-				8F0759991D7742CA0012D681 /* UIImageView.swift */,
 				8F0759A31D774C5C0012D681 /* AppDelegate+Configure.swift */,
+				B23A40EF1C972C2B004AB8DC /* NSDate.swift */,
+				28A6B9D51CB5F95900682BCE /* RouteType.swift */,
 				465910AE1D80A5000022374B /* String.swift */,
+				28FEB24B1C9875F60027D470 /* UIApplication+Utility.swift */,
+				28D65F941C99D8AF008ED705 /* UIDevice+Utility.swift */,
+				8F0759991D7742CA0012D681 /* UIImageView+AlamofireImageWrapper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -888,17 +888,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2841F1DC1CCFF55600D609CE /* UIApplication.swift in Sources */,
+				2841F1DC1CCFF55600D609CE /* UIApplication+Utility.swift in Sources */,
 				ECD86FE21F1EC24200AE1AF0 /* URLRequestSetup.swift in Sources */,
 				2841F1DD1CCFF55600D609CE /* NSDate.swift in Sources */,
 				2841F1E01CCFF55600D609CE /* XLTableViewController.swift in Sources */,
 				2841F1E11CCFF55600D609CE /* Manager.swift in Sources */,
-				2841F1E31CCFF55600D609CE /* UIDevice.swift in Sources */,
+				2841F1E31CCFF55600D609CE /* UIDevice+Utility.swift in Sources */,
 				2841F1E41CCFF55600D609CE /* RouteType.swift in Sources */,
 				2841F1E51CCFF55600D609CE /* LoginController.swift in Sources */,
 				8F0759A21D774B390012D681 /* SessionController.swift in Sources */,
 				2841F1E71CCFF55600D609CE /* UserModel.swift in Sources */,
-				8F07599B1D7742CA0012D681 /* UIImageView.swift in Sources */,
+				8F07599B1D7742CA0012D681 /* UIImageView+AlamofireImageWrapper.swift in Sources */,
 				2841F1E81CCFF55600D609CE /* XLViewController.swift in Sources */,
 				8F0759A81D774FC10012D681 /* RealmManager.swift in Sources */,
 				465910B01D80A5000022374B /* String.swift in Sources */,
@@ -917,17 +917,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28FEB24C1C9875F60027D470 /* UIApplication.swift in Sources */,
+				28FEB24C1C9875F60027D470 /* UIApplication+Utility.swift in Sources */,
 				ECD86FE11F1EC24200AE1AF0 /* URLRequestSetup.swift in Sources */,
 				B23A40F01C972C2B004AB8DC /* NSDate.swift in Sources */,
 				2817316B1C9C4BDA006237C7 /* XLTableViewController.swift in Sources */,
 				28A6B9D81CB6271800682BCE /* Manager.swift in Sources */,
-				28D65F951C99D8AF008ED705 /* UIDevice.swift in Sources */,
+				28D65F951C99D8AF008ED705 /* UIDevice+Utility.swift in Sources */,
 				28A6B9D61CB5F95900682BCE /* RouteType.swift in Sources */,
 				283A74511C84DF2A00E23F88 /* LoginController.swift in Sources */,
 				8F0759A11D774B390012D681 /* SessionController.swift in Sources */,
 				28C2824A1C7798B0003ECA4F /* UserModel.swift in Sources */,
-				8F07599A1D7742CA0012D681 /* UIImageView.swift in Sources */,
+				8F07599A1D7742CA0012D681 /* UIImageView+AlamofireImageWrapper.swift in Sources */,
 				281731691C9C4BBC006237C7 /* XLViewController.swift in Sources */,
 				8F0759A71D774FC10012D681 /* RealmManager.swift in Sources */,
 				465910AF1D80A5000022374B /* String.swift in Sources */,
