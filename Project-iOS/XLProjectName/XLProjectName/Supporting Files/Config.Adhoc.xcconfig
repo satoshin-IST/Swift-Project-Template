@@ -8,4 +8,4 @@
 #include "Pods/Target Support Files/Pods-XLProjectName/Pods-XLProjectName.adhoc.xcconfig"
 
 PRODUCT_BUNDLE_IDENTIFIER=XLOrganizationIdentifier.XLProjectName.adhoc
-OTHER_SWIFT_FLAGS = $(inherited) "-D" "ADHOC" "-D" "COCOAPODS" "-Xfrontend" "-warn-long-function-bodies=150"
+OTHER_SWIFT_FLAGS = $(inherited) "-Onone" "-D" "ADHOC" "-D" "COCOAPODS" "-Xfrontend" "-warn-long-function-bodies=150"

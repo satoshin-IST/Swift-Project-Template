@@ -53,7 +53,7 @@ class SessionController {
         // This implementation just works if you will only have one User in the database all the time
         // If you might have more than one then you should implement something else like another object that saves a relation to the 'currentUser'.
         do {
-            let realm = try RealmManager.sharedInstance.createRealm()
+            let realm = try RealmService.sharedInstance.createRealm()
             return realm.objects(User.self).first
         } catch {
             Crashlytics.sharedInstance().recordError(error as NSError)
@@ -64,7 +64,7 @@ class SessionController {
     // MARK: - Auxiliary functions
     func clearSession() {
         token = nil
-        RealmManager.sharedInstance.eraseAll()
+        RealmService.sharedInstance.eraseAll()
 //        Analytics.reset()
 //        Analytics.registerUnidentifiedUser()
         Crashlytics.sharedInstance().setUserEmail(nil)
@@ -77,7 +77,7 @@ class SessionController {
 
     lazy var userObservable: Observable<User> = {
         return Observable.create() { [unowned self] (subscriber: AnyObserver<User>) in
-            let realm = RealmManager.sharedInstance.defaultRealm
+            let realm = RealmService.sharedInstance.defaultRealm
             let userResult = realm?.objects(User.self)
             self.userObserverToken = userResult?.addNotificationBlock { _ in
                 if let user = self.user {
