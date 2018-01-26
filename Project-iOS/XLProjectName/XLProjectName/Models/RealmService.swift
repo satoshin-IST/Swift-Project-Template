@@ -11,9 +11,9 @@ import UIKit
 import Crashlytics
 import RealmSwift
 
-class RealmService: AnyObject {
+class RealmService {
 
-    static let sharedInstance = RealmService()
+    static let shared = RealmService()
 
     fileprivate(set) var defaultRealm: Realm!
 
@@ -30,20 +30,9 @@ class RealmService: AnyObject {
 
         do {
             defaultRealm = try Realm(configuration: config)
-            printLog("Realm DB path: \(config.fileURL)")
-        } catch {
-            let nserror = error as NSError
-            Crashlytics.sharedInstance().recordError(nserror)
-        }
-    }
-
-    func eraseAll() {
-        do {
-            let realm = try createRealm()
-            try realm.write {
-                realm.deleteAll()
-            }
-        } catch {
+            printLog("Realm DB path: \(String(describing: config.fileURL))")
+        } catch error {
+            // TODO: ErrorをNSErrorに丁寧に変換するExtensionを追加する
             let nserror = error as NSError
             Crashlytics.sharedInstance().recordError(nserror)
         }
@@ -52,32 +41,56 @@ class RealmService: AnyObject {
     func createRealm() throws -> Realm {
         return try Realm(configuration: config)
     }
-
-}
-
-extension Object {
-
-    fileprivate func realmInst() -> Realm {
-        return self.realm ?? RealmService.sharedInstance.defaultRealm
-    }
-
-    /** Must be called from main thread */
-    func save(_ update: Bool = true) throws {
-        let realm = self.realmInst()
+    
+    func deleteAll<T: Object>(_ modelType: T.Type) throws {
+        let realm = try createRealm()
         try realm.write {
-            realm.add(self, update: update)
-        }
-    }
-
-    /** Must be called from main thread */
-    static func save(_ objects: [Object], update: Bool = true) throws {
-        guard let first = objects.first else {
-            return
-        }
-        let realm = first.realmInst()
-        try realm.write {
-            objects.forEach() { realm.add($0, update: update) }
+            let allObjects = realm.objects(modelType)
+            realm.delete(allObjects)
         }
     }
     
+    func drop() throws {
+        let realm = try createRealm()
+        try realm.write {
+            realm.deleteAll()
+        }
+    }
+}
+
+extension Object {
+    
+    /** Must be called from main thread **/
+
+    fileprivate func realmInstance() -> Realm {
+        return self.realm ?? RealmService.shared.defaultRealm
+    }
+    
+    func edit(_ hundler: (() -> Void) ) throws {
+        let realm = realmInstance()
+        try realm.write {
+            hundler()
+        }
+    }
+    
+    func insert() throws {
+        let realm = realmInstance()
+        try realm.write {
+            realm.add(self)
+        }
+    }
+    
+    func update() throws {
+        let realm = realmInstance()
+        try realm.write {
+            realm.add(self, update: true)
+        }
+    }
+    
+    func delete() throws {
+        let realm = realmInstance()
+        try realm.write {
+            realm.delete(self)
+        }
+    }
 }
