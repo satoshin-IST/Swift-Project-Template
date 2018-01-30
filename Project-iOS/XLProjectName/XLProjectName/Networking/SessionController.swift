@@ -65,7 +65,7 @@ class SessionController {
     func clearSession() {
         token = nil
         do {
-         try RealmService.shared.drop()
+         try RealmService.shared.dropDB()
         } catch {
             print(error)
         }

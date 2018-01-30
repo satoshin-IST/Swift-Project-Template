@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225FEACE20206AE200C76023 /* RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FEACD20206AE200C76023 /* RealmTests.swift */; };
 		226987FF2011F78B00FB86C4 /* NSPredicateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226987FE2011F78B00FB86C4 /* NSPredicateExtension.swift */; };
 		22A269352011BB890040513E /* AppDelegate+PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A269342011BB890040513E /* AppDelegate+PushNotification.swift */; };
 		22ADF8C42011C2D200BEA216 /* Config.Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 22ADF8C32011C2D200BEA216 /* Config.Debug.xcconfig */; };
@@ -73,6 +74,7 @@
 		0A1759BFE439013D1F0FBED3 /* Pods-UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITests/Pods-UITests.release.xcconfig"; sourceTree = "<group>"; };
 		174F585F7E9D6B2B6BF61B19 /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C3863EDAF6B64F5C07C53A /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		225FEACD20206AE200C76023 /* RealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTests.swift; sourceTree = "<group>"; };
 		226987FE2011F78B00FB86C4 /* NSPredicateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPredicateExtension.swift; sourceTree = "<group>"; };
 		22A269342011BB890040513E /* AppDelegate+PushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+PushNotification.swift"; sourceTree = "<group>"; };
 		22ADF8C32011C2D200BEA216 /* Config.Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Debug.xcconfig; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				28C69D3B1CD8E3D600F839D6 /* Tests.swift */,
+				225FEACD20206AE200C76023 /* RealmTests.swift */,
 				28C69D3D1CD8E3D600F839D6 /* Info.plist */,
 			);
 			path = Tests;
@@ -461,7 +464,7 @@
 					28C69D381CD8E3D600F839D6 = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0800;
-						TestTargetID = 2841F1D91CCFF55600D609CE;
+						TestTargetID = 2867E8261C74C7D400FCEBBD;
 					};
 					28F4E1581CDA53B5002B70A7 = {
 						CreatedOnToolsVersion = 7.3;
@@ -757,6 +760,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28C69D3C1CD8E3D600F839D6 /* Tests.swift in Sources */,
+				225FEACE20206AE200C76023 /* RealmTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,7 +884,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.XLOrganizationIdentifier.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XLProjectName-Staging.app/XLProjectName-Staging";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XLProjectName.app/XLProjectName";
 			};
 			name = Adhoc;
 		};
@@ -1032,7 +1036,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.XLOrganizationIdentifier.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XLProjectName-Staging.app/XLProjectName-Staging";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XLProjectName.app/XLProjectName";
 			};
 			name = Debug;
 		};
@@ -1048,7 +1052,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.XLOrganizationIdentifier.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XLProjectName-Staging.app/XLProjectName-Staging";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XLProjectName.app/XLProjectName";
 			};
 			name = Release;
 		};
