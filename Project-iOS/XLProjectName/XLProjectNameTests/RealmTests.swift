@@ -5,6 +5,8 @@
 //  Created by XLAuthorName
 //  Copyright © 2018年 'XLOrganizationName'. All rights reserved.
 //
+//  NOTE:
+//  「No Such Module 〜」のエラーがでる場合は podがinstallされていることを確認の上 ⌘+B を実行してから ⌘+U 
 
 import XCTest
 import RealmSwift
