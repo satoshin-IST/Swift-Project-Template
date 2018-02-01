@@ -66,11 +66,11 @@ target 'XLProjectName' do
     app_pods
 end
 
-target 'Tests' do
+target 'XLProjectNameTests' do
   testing_pods
 end
 
-target 'UITests' do
+target 'XLProjectNameUITests' do
     testing_pods
 end
 

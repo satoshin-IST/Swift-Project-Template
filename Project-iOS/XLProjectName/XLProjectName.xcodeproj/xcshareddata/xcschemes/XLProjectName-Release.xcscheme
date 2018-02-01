@@ -29,6 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2233E92C202190C200CFE6A3"
+               BuildableName = "XLProjectNameTests.xctest"
+               BlueprintName = "XLProjectNameTests"
+               ReferencedContainer = "container:XLProjectName.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2233E93B202190DB00CFE6A3"
+               BuildableName = "XLProjectNameUITests.xctest"
+               BlueprintName = "XLProjectNameUITests"
+               ReferencedContainer = "container:XLProjectName.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
