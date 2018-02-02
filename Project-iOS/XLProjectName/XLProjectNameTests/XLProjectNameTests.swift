@@ -1,14 +1,14 @@
 //
-//  Tests.swift
-//  Tests
+//  XLProjectNameTests.swift
+//  XLProjectNameTests
 //
-//  Created by Xmartlabs SRL ( http://xmartlabs.com )
-//  Copyright © 2018 XLOrganizationName. All rights reserved.
+//  Created by XLAuthorName
+//  Copyright © 2018年 'XLOrganizationName'. All rights reserved.
 //
 
 import XCTest
 
-class Tests: XCTestCase {
+class XLProjectNameTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

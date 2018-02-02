@@ -1,16 +1,15 @@
 //
-//  UITests.swift
-//  UITests
+//  XLProjectNameUITests.swift
+//  XLProjectNameUITests
 //
-//  Created by Xmartlabs SRL ( http://xmartlabs.com )
-//  Copyright © 2018 XLOrganizationName. All rights reserved.
+//  Created by XLAuthorName
+//  Copyright © 2018年 'XLOrganizationName'. All rights reserved.
 //
 
 import XCTest
-import Nimble
 
-class UITests: XCTestCase {
-    
+class XLProjectNameUITests: XCTestCase {
+        
     override func setUp() {
         super.setUp()
         
@@ -20,7 +19,7 @@ class UITests: XCTestCase {
         continueAfterFailure = false
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-        
+
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
@@ -29,7 +28,9 @@ class UITests: XCTestCase {
         super.tearDown()
     }
     
-    func testNothing() {
-        
+    func testExample() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
 }

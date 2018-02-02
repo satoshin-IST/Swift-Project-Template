@@ -57,19 +57,20 @@ def app_pods
 end
 
 def testing_pods
-    pod 'Quick', '~> 1.0'
-    pod 'Nimble', '~> 5.0'
+    pod 'RealmSwift', '~> 2.0'
+    pod 'Quick', '~> 1.2.0'
+    pod 'Nimble', '~> 7.0.3'
 end
 
 target 'XLProjectName' do
     app_pods
 end
 
-target 'Tests' do
+target 'XLProjectNameTests' do
   testing_pods
 end
 
-target 'UITests' do
+target 'XLProjectNameUITests' do
     testing_pods
 end
 
