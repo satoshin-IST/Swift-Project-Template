@@ -62,12 +62,16 @@ class RealmTests: QuickSpec {
             
             describe("ObjectExtension", closure: {
                 
-                it("1件のレコードを新規追加できること", closure: {
-                    let username = "イヴァン・イヴァノヴィチ"
+                let username = "イヴァン・イヴァノヴィチ"
+                
+                beforeEach {
                     let user = User()
                     user.email = "email3@email3.com"
                     user.username = username
                     try! user.insert(realm)
+                }
+                
+                it("1件のレコードを新規追加できていること", closure: {
                     let predicate = NSPredicate("username", equal: username as AnyObject)
                     let result = RealmHelper.find(User.self, predicate: predicate, realm: realm)?.toArray()
                     expect(result?.first?.username).to(equal(username))
@@ -84,14 +88,29 @@ class RealmTests: QuickSpec {
                     expect(result?.first?.username).to(equal(updateName))
                 })
                 
-                it("1件のレコードを削除できること", closure: {
+                it("1件のレコードの削除が確認できること", closure: {
+ 
+                    let predicate = NSPredicate("username", equal: username as AnyObject)
+                    let beforeUser = RealmHelper.find(User.self, predicate: predicate, realm: realm)?.first
                     let beforeCount = RealmHelper.findAll(User.self, realm)?.count ?? 0
-                    let user = RealmHelper.findFirst(User.self, realm)
-                    try! user?.delete(realm)
-                    let afterCount = RealmHelper.findAll(User.self, realm)?.count
+                    
+                    expect(beforeUser).toNot(beNil())
+                    
+                    try! beforeUser?.delete(realm)
+
+                    let afterUser = RealmHelper.find(User.self, predicate: predicate, realm: realm)?.first
+                    let afterCount = RealmHelper.findAll(User.self, realm)?.count ?? 0
+
+                    expect(afterUser).to(beNil())
                     expect(afterCount).to(equal(beforeCount-1))
                 })
             })
+            
+            afterEach {
+                try! realm?.write {
+                    realm?.deleteAll()
+                }
+            }
         }
     }
     
