@@ -1,50 +1,32 @@
-disabled_rules: # rule identifiers to exclude from running
-  - line_length            # 1 行の長さ
-  - trailing_whitespace    # 行末に余計なスペース
-#  - colon
-#  - comma
-#  - control_statement
-#  - file_length
-#  - force_cast
-  - force_try
-#  - function_body_length
-#  - leading_whitespace
-#  - line_length
-#  - nesting
-#  - operator_whitespace
-#  - opening_brace
-#  - return_arrow_whitespace
-#  - statement_position
-#  - todo
-#  - trailing_newline
-#  - trailing_semicolon
-#  - type_body_length
-#  - type_name
-#  - valid_docs
-#  - variable_name
-#  - variable_name_min_length
-#  - variable_name_max_length
-excluded: # paths to ignore during linting. overridden by `included`.
+# 除外ディレクトリ
+excluded:
   - Carthage
   - Pods
   - fastlane
   - XLProjectName/Helpers/R-Swift/R.generated.swift
-opt_in_rules:
-  - force_unwrapping
+
+# 無効にするルール
+disabled_rules:
+  - line_length            # 1 行の長さ
+  - trailing_whitespace    # 行末に余計なスペース
+  - force_try              # try!
 
 # error 扱いにするルール
-force_cast: error          # [NG] as!
-force_unwrapping: error    # [NG] value!
-opening_brace: error       # [NG] if x == 0{ / [OK] if x == 0 {
-statement_position: error  # [NG] if x == 0 \n { / [OK] if x == 0 {
+force_cast: error              # [NG] as!
+force_unwrapping: error        # [NG] value!
+opening_brace: error           # [NG] if x == 0{ / [OK] if x == 0 {
+statement_position: error      # [NG] if x == 0 \n { / [OK] if x == 0 {
 return_arrow_whitespace: error # [NG] func foo()->Int / [OK] func foo() -> Int
-colon: error               # [NG] let x:Int = 0 / [OK] let x: Int = 0
-comma: error               # [NG] foo(x,y , z) / [OK] foo(x, y, z)
+colon:                         # [NG] let x:Int = 0 / [OK] let x: Int = 0
+  severity: error
+comma:                         # [NG] foo(x,y , z) / [OK] foo(x, y, z)
+  severity: error
+cyclomatic_complexity:         # [NG] 関数内の複雑性(ネストの深いifやifの連続)は程々にしましょう
+  severity: error
+control_statement:             # [NG] if (x == 0) / [OK] if x == 0
+  severity: error 
 
-# warning 扱いにするルール
-control_statement: warning # [NG] if (x == 0) / [OK] if x == 0
-force_try: warning         # [NG] try! throwableFunc()
-
+# 変数名命名規則(id,x,y,z 以外に適用)
 variable_name:
   max_length:
     warning: 30
@@ -57,3 +39,26 @@ variable_name:
     - x
     - y
     - z
+
+# 1行あたりの文字数制限を300に変更
+# プロジェクト作成時にデフォルトで追加されるコメントをひっかけないため
+line_length: 300
+
+# デフォルト無効のルールで有効にするもの
+opt_in_rules:
+- attributes
+- closure_end_indentation
+- closure_spacing
+- empty_count
+- explicit_init
+- explicit_type_interface        # クラス変数とかインスタンス変数とかには"型"を記述した方がいい
+- fatal_error_message            # fatalErrorを使う場合はメッセージを記述した方がいい
+#- implicitly_unwrapped_optional # 暗黙的なUnwrapはやめた方がいい
+- object_literal
+- operator_usage_whitespace
+- overridden_super_call
+#- private_outlet　　　　　　　　　# IBOutletはprivateにしたほうが良い
+- prohibited_super_call
+- redundant_nil_coalescing
+#- sorted_imports                # import部分はソートされているべき
+- switch_case_on_newline
