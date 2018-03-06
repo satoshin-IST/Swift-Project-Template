@@ -108,9 +108,9 @@ extension NSPredicate {
         case .and:
             return NSCompoundPredicate(andPredicateWithSubpredicates: p)
         case .or:
-            return NSCompoundPredicate(orPredicateWithSubpredicates:  p)
+            return NSCompoundPredicate(orPredicateWithSubpredicates: p)
         case .not:
-            return NSCompoundPredicate(notPredicateWithSubpredicate:  self.compound(predicates: p))
+            return NSCompoundPredicate(notPredicateWithSubpredicate: self.compound(predicates: p))
         }
     }
     
