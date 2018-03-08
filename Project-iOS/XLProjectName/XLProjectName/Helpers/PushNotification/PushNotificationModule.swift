@@ -11,10 +11,6 @@ import UIKit
 import UserNotifications
 //import NCMB
 
-// MEMO: AppDelegate には処理を書かず独自の構造体で デバイストークン登録、push受信の処理等を定義する
-// MEMO: アプリ起動中、バックグラウウンド、未起動でハンドリングが分けられている
-// MEMO: payaload は構造体で定義してUnboxなりCodableでマッピング
-
 struct PushNotificationModule {
     
     enum UsedService {
@@ -133,21 +129,12 @@ extension PushNotificationModule {
 extension PushNotificationModule {
     
     private struct ConstNCMB {
-        #if DEBUG
-            static let applicationKeyString = ""
-            static let clientKeyString = ""
-        #else
-            static let applicationKeyString = ""
-            static let clientKeyString = ""
-        #endif
+        static let applicationKeyString = Bundle.main.readStringObject("NCMB_APPLICATION_KEY")
+        static let clientKeyString = Bundle.main.readStringObject("NCMB_CLIENT_KEY")
     }
     
     private struct ConstAWS {
-        #if DEBUG
-        static let snsPlatformArn = ""
-        #else
-        static let snsPlatformArn = ""
-        #endif
+        static let snsPlatformArn = Bundle.main.readStringObject("AWS_SNS_PLATFORM_ARN")
     }
     
     /// ニフティクラウドでのPush通知を行う場合の各種初期設定
