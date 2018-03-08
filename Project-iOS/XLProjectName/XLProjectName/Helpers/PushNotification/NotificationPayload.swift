@@ -2,7 +2,7 @@
 //  ConstTarget.swift
 //  XLProjectName
 //
-//  Created by 池野 湧太 on 2018/02/05.
+//  Created by XLAuthorName
 //  Copyright © 2018年 'XLOrganizationName'. All rights reserved.
 //
 
