@@ -9,3 +9,8 @@
 
 PRODUCT_BUNDLE_IDENTIFIER=XLOrganizationIdentifier.XLProjectName.release
 OTHER_SWIFT_FLAGS = $(inherited)
+
+// Push Notification
+NCMB_APPLICATION_KEY = mBaasで作成したアプリケーションキーを設定
+NCMB_CLIENT_KEY = mBaasで作成したクライアントキーを設定
+AWS_SNS_PLATFORM_ARN = AWS SNSで作成したApplicationのARNを設定

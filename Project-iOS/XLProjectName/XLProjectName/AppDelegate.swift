@@ -17,8 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         setupCrashlytics()
 
-        UIApplication.requestPermissionToShowPushNotification()
-        UIApplication.shared.registerForRemoteNotifications()
+        //UIApplication.requestPermissionToShowPushNotification()
+        //UIApplication.shared.registerForRemoteNotifications()
+        PushNotificationModule.shared.registerForRemote()
+        PushNotificationModule.shared.didFinishLaunching(options: launchOptions)
         return true
     }
 
