@@ -25,6 +25,7 @@ github "ninjaprox/NVActivityIndicatorView"
 #===utility
 github "Ekhoo/Device" ~> 3.0.3
 github "malcommac/SwiftDate" ~> 4.5.1
+github "xmartlabs/XLSwiftKit" ~> 3.0
 #github "malcommac/SwiftLocation"
 #github "kishikawakatsumi/KeychainAccess"
 

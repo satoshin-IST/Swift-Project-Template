@@ -216,8 +216,8 @@ for fileURL in directories.reversed() {
 var name = projectSettings.name
 print("newProjectFolderPath = \(newProjectFolderPath)")
 
-print("carthage update --platform iOS --no-use-binaries --cache-builds")
-print(shell(path: "/\(newProjectFolderPath)/\(name)", args: "carthage", "update", "--platform", "iOS","--no-use-binaries","--cache-builds").output)
+print("carthage bootstrap --platform iOS --no-use-binaries --cache-builds")
+print(shell(path: "/\(newProjectFolderPath)/\(name)", args: "carthage", "bootstrap", "--platform", "iOS","--no-use-binaries","--cache-builds").output)
 
 print("pod install --project-directory=\(name) --no-repo-update\n")
 print(shell(path: newProjectFolderPath, args: "pod", "install", "--project-directory=\(name)").output)
