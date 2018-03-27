@@ -22,10 +22,7 @@ Answer some questions:
 
 We are done! Now start coding your app! 🍻🍻
 
-
-## プロジェクト構成
-
-### プロジェクト基本設定
+## プロジェクト基本設定
 
 **Targets指定漏れ対策やビルド時間短縮のため** 環境毎の設定は`Scheme & xcconfig`で行っています。
 
@@ -46,7 +43,7 @@ Swift 4.0
   ProjectName-Release: `Supporting Files/Config.Release.xcconfig`
 ```
 
-### ライブラリ基本設定
+## ライブラリ基本設定
 
 **ビルド速度向上のため** Carthageをメインとしています。
 
