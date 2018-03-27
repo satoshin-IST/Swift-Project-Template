@@ -26,8 +26,6 @@ We are done! Now start coding your app! 🍻🍻
 
 **Targets指定漏れ対策やビルド時間短縮のため** 環境毎の設定は`Scheme & xcconfig`で行っています。
 
-xcconfigファイルに環境変数を設定し対応するSchemeと紐付けています。
-
 ```
 Xcode 9.2
 Swift 4.0
@@ -46,11 +44,6 @@ Swift 4.0
 ## ライブラリ基本設定
 
 **ビルド速度向上のため** Carthageをメインとしています。
-
-`Skelton.swif`にて以下を実行してインストールしています。
-
-* `carthage bootstrap --platform iOS --no-use-binaries --cache-builds`
-* `pod install --no-repo-update` 
 
 ```
 - ネットワーク
