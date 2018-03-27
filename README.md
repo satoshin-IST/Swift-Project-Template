@@ -1,6 +1,6 @@
 # Swift-Project-Template
 
-`Skelton.swif`を実行してiOS用各種設定が構築済みのスケルトンプロジェクトを作成できます。
+`Skelton.swif`を実行してiOS用各種設定が構築済みのプロジェクトを生成できます。
 
 ## 使い方
 
