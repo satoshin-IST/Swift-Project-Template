@@ -2,6 +2,28 @@
 
 `Skelton.swif`を実行してiOS用各種設定が構築済みのプロジェクトを生成できます。
 
+## Features
+
+- [x] 対話型でプロジェクト設定
+- [x] 標準ライブラリ自動インストール
+- [x] SwiftLint
+- [x] R-Swift
+- [x] Push通知用モジュール
+- [x] RealmSwift用モジュール
+- [x] ビルド最適化(Optimization Level, Swift Other Flags)
+- [x] xcconfig & schemeによる環境切り分け
+- [ ] Jazzy
+- [ ] Swagger
+- [ ] Fastlane, EMLauncher
+- [ ] Danger
+- [ ] Peek
+- [ ] Playground Driven Development
+- [ ] FBSnapshotTestCase
+- [ ] シェル実行時にプライバシー関連の質問でPlistを更新
+- [ ] Bluetoothe
+- [ ] GoogleAnalytics
+- [ ] Repro
+
 ## 使い方
 
 git clone
