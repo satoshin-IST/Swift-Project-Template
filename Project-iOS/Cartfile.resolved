@@ -1,0 +1,8 @@
+github "Alamofire/Alamofire" "4.7.0"
+github "Alamofire/AlamofireImage" "3.3.0"
+github "Ekhoo/Device" "3.0.3"
+github "Thomvis/BrightFutures" "6.0.0"
+github "antitypical/Result" "3.2.4"
+github "johnsundell/unbox" "2.5.0"
+github "malcommac/SwiftDate" "4.5.1"
+github "ninjaprox/NVActivityIndicatorView" "4.1.1"

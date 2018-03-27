@@ -1,0 +1,39 @@
+
+#===NOTE
+# 
+# 基本的な標準ライブラリ以外はOption扱いとしてコメントアウトしています
+# 追加する場合は 「LinkBinary With Libraries」「RunScript(Carthage)」の編集を行って下さい。 
+#
+# 参考
+# https://bit.ly/2IU8Jzg
+#
+
+#===Network
+github "Alamofire/Alamofire" ~> 4.7
+github "Alamofire/AlamofireImage" ~> 3.3
+github "johnsundell/unbox"
+
+#===Async
+github "Thomvis/BrightFutures"
+
+#===UI
+github "ninjaprox/NVActivityIndicatorView"
+
+#===DB
+#github "realm/realm-cocoa"
+
+#===utility
+github "Ekhoo/Device" ~> 3.0.3
+github "malcommac/SwiftDate" ~> 4.5.1
+#github "malcommac/SwiftLocation"
+#github "kishikawakatsumi/KeychainAccess"
+
+#===PushNotification
+#github "NIFTYCloud-mbaas/ncmb_ios"
+#github "aws/aws-sdk-ios"
+
+# Firebaseはまだ公式サポートしていないのでpodを利用のこと
+
+#===Test
+#github "Quick/Quick"
+#github "Quick/Nimble"

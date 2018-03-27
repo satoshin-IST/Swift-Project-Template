@@ -1,86 +1,18 @@
 PODS:
-  - Alamofire (4.4.0)
-  - AlamofireImage (3.2.0):
-    - Alamofire (~> 4.1)
-  - AsyncKit (2.0.1)
-  - Crashlytics (3.9.3):
-    - Fabric (~> 1.7.2)
-  - Decodable (0.6.0)
-  - Device (2.1.0)
-  - Fabric (1.7.2)
-  - KeychainAccess (3.1.0)
-  - Nimble (7.0.3)
-  - NVActivityIndicatorView (3.7.0):
-    - NVActivityIndicatorView/Presenter (= 3.7.0)
-  - NVActivityIndicatorView/Presenter (3.7.0)
-  - OperaSwift (2.0.0):
-    - Alamofire (~> 4.4.0)
-    - RxCocoa (~> 3.4.0)
-    - RxSwift (~> 3.4.0)
-  - Quick (1.2.0)
-  - R.swift (3.3.0):
-    - R.swift.Library (~> 3.0.2)
-  - R.swift.Library (3.0.2)
-  - Realm (2.10.2):
-    - Realm/Headers (= 2.10.2)
-  - Realm/Headers (2.10.2)
-  - RealmSwift (2.10.2):
-    - Realm (= 2.10.2)
-  - RxAlamofire (3.0.3):
-    - RxAlamofire/Core (= 3.0.3)
-  - RxAlamofire/Core (3.0.3):
-    - Alamofire (~> 4.0)
-    - RxSwift (~> 3.0)
-  - RxCocoa (3.4.1):
-    - RxSwift (~> 3.4)
-  - RxSwift (3.4.1)
-  - SwiftLint (0.24.2)
-  - Unbox (2.5.0)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - SwiftLint (0.25.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.0)
-  - AlamofireImage (~> 3.0)
-  - AsyncKit (~> 2.0.1)
-  - Crashlytics
-  - Decodable (~> 0.5)
-  - Device (~> 2.0)
-  - Fabric (~> 1.6)
-  - KeychainAccess (~> 3.0)
-  - Nimble (~> 7.0.3)
-  - NVActivityIndicatorView (~> 3.0)
-  - OperaSwift (~> 2.0)
-  - Quick (~> 1.2.0)
-  - R.swift (~> 3.0)
-  - RealmSwift (~> 2.0)
-  - RxAlamofire (~> 3.0)
-  - RxCocoa (~> 3.0)
-  - RxSwift (~> 3.0)
-  - SwiftLint (~> 0.24.2)
-  - Unbox (~> 2.5.0)
+  - R.swift (~> 4.0)
+  - SwiftLint (~> 0.25.0)
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
-  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
-  AsyncKit: 3817ed496961ea2595d80fe2ff8939398e72f82e
-  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
-  Decodable: f0b95fa2fcf8633dd097aa8f7f09838ab3524f5d
-  Device: b6f1eac43c482e9b4be50e7606253f2a27449685
-  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
-  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
-  OperaSwift: c545476deab7a43dab1ca6a273bdb6f79382688f
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  R.swift: bde9704d50ff36820f49e266bc88ef545e1e9b36
-  R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
-  Realm: 0ef72b837fb67e9f4b098bac771ddd72c7fdbb69
-  RealmSwift: 07a9ae0505091eda6b2ee7c190c3786d6e90a7b0
-  RxAlamofire: 5eb39188c4917ad98127c0ecb4878a61b7517003
-  RxCocoa: a8a5f1d061d0043e28f56976829f31ce63e8eb09
-  RxSwift: 656f8fbeca5bc372121a72d9ebdd3cd3bc0ffade
-  SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
-  Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
 
-PODFILE CHECKSUM: 166a3a3e38804368b881d0cff2746a4ebee7a71e
+PODFILE CHECKSUM: 2b23aae473fe6391b73df9497082b79f280b61d6
 
 COCOAPODS: 1.2.1
