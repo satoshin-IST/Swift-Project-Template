@@ -36,5 +36,5 @@ github "xmartlabs/XLSwiftKit" ~> 3.0
 # Firebaseはまだ公式サポートしていないのでpodを利用のこと
 
 #===Test
-#github "Quick/Quick"
-#github "Quick/Nimble"
+github "Quick/Quick" ~> 1.2.0
+github "Quick/Nimble" ~> 7.0.3
