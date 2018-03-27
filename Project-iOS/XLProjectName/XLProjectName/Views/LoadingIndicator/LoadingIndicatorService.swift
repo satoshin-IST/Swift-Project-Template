@@ -52,7 +52,8 @@ class LoadingIndicatorService {
 
     // MARK: - Timer events
 
-    @objc func hideActivityTimerFired(_ timer: Timer) {
+    @objc
+    func hideActivityTimerFired(_ timer: Timer) {
         hideActivityTimer?.invalidate()
         hideActivityTimer = nil
         if userWantsToStopActivity {
@@ -60,7 +61,8 @@ class LoadingIndicatorService {
         }
     }
 
-    @objc func showActivityTimerFired(_ timer: Timer) {
+    @objc
+    func showActivityTimerFired(_ timer: Timer) {
         guard let activityData = timer.userInfo as? ActivityData else { return }
         showActivity(activityData)
     }
