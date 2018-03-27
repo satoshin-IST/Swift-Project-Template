@@ -31,20 +31,20 @@ Targets指定漏れ対策やビルド時間短縮のために環境毎の設定�
 
 xcconfigファイルに環境変数を設定し対応するSchemeと紐付けています。
 
-* Xcode 9.2
+```
+Xcode 9.2
+Swift 4.0
 
-* Swift 4.0
-
-* Targets
-  * ProjectTarget:
-  * Tests: 
-  * UITests:
+- Targets
+  ProjectTarget
+  Tests
+  UITests
   
-* Scheme & xcconfig
-  * ProjectName-Debug: `Supporting Files/Config.Debug.xcconfig`
-  * ProjectName-Adhoc: `Supporting Files/Config.Adhoc.xcconfig`
-  * ProjectName-Release: `Supporting Files/Config.Release.xcconfig`
-  
+- Scheme & xcconfig
+  ProjectName-Debug: `Supporting Files/Config.Debug.xcconfig`
+  ProjectName-Adhoc: `Supporting Files/Config.Adhoc.xcconfig`
+  ProjectName-Release: `Supporting Files/Config.Release.xcconfig`
+```
 
 ### ライブラリ基本設定
 
@@ -52,20 +52,23 @@ xcconfigファイルに環境変数を設定し対応するSchemeと紐付けて
 
 `R-Swift`, `SwiftLint`のみをCocoaPodでインストールしています。
 
-* ネットワーク
-  * Alamofire
+```
+- ネットワーク
+  Alamofire
   
-* 非同期処理
-  * [BrightFutures](https://github.com/Thomvis/BrightFutures)
+- 非同期処理
+  BrightFutures
 
-* ユーティリティ
-  * [R-Swift](https://github.com/mac-cain13/R.swift)
-  * [Device](https://github.com/Ekhoo/Device)
-  * [SwiftDate](https://github.com/malcommac/SwiftDate)
-  * [XLSwiftKit](https://github.com/xmartlabs/XLSwiftKit)
+- ユーティリティ
+  R-Swift
+  Device
+  SwiftDate
+  XLSwiftKit
 
-* テスト
-  * Quick / Nimble 
+- テスト
+  Quick / Nimble 
 
-* その他 
-  * [Cartfile](https://github.com/satoshin-IST/Swift-Project-Template/blob/develop/Project-iOS/XLProjectName/Cartfile) を参照して下さい
+- その他 
+  Cartfileを参照して下さい
+    (https://github.com/satoshin-IST/Swift-Project-Template/blob/develop/Project-iOS/XLProjectName/Cartfile) 
+```
