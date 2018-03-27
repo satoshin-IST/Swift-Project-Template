@@ -13,7 +13,7 @@ func printLog(_ message: String, file: String = #file, line: Int = #line, functi
     #if DEBUG
         let fileURL = NSURL(fileURLWithPath: file)
         let fileName = fileURL.deletingPathExtension?.lastPathComponent ?? ""
-        print("\(Date().dblog()) \(fileName)::\(function)[L:\(line)] \(message)")
+        print("\(fileName)::\(function)[L:\(line)] \(message)")
     #endif
     //    // Nothing to do if not debugging
 }

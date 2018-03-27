@@ -2,7 +2,7 @@
 //  ConstTarget.swift
 //  XLProjectName
 //
-//  Created by XLAuthorName
+//  Created by XLAuthorName.
 //  Copyright © 2018年 'XLOrganizationName'. All rights reserved.
 //
 
