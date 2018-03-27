@@ -25,8 +25,7 @@ extension UIImageView {
                     placeholderImage: placeholder,
                     filter: filter,
                     imageTransition: transition,
-                    completion: {
-                        (response: DataResponse<UIImage>) in
+                    completion: { (response: DataResponse<UIImage>) in
                         if let error = response.result.error {
                             print(error.localizedDescription)
                         }
