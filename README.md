@@ -1,33 +1,41 @@
 # Swift-Project-Template
 
-[![Build Status](https://travis-ci.org/xmartlabs/Swift-Project-Template.svg?branch=master)](https://travis-ci.org/xmartlabs/Swift-Project-Template)
+`Skelton.swif`を実行してiOS用各種設定が構築済みのスケルトンプロジェクトを作成できます。
 
-Create your iOS Base project in just a few seconds by executing a script and answering some project questions. This is what we use to get started with a new iOS project from scratch!
-
-Swift Project Template provides us with a base iOS project template along with and a swift script to make naming customizations on it.
-
-Currently you can find the project template under the [master](/tree/master) branch and a more complete example project (including more example files) under the [ExampleProject](/tree/ExampleProject) branch.
-
-iOS project has the following configuration:
+## プロジェクト構成
 
 * Targets
-  * Test: Unit tests working with Quick and Nimble.
-  * UITest: Functional tests working with Nimble matcher.
-  * App Production Target.
-  * App Staging Target. Same app source code with a different bundle id, it points to a different Restful API (staging one).
+  * ProjectTarget: ヒューマンエラーを除去するためにTargetは一つです。
+  * Tests: 
+  * UITests:
 
-* Project Configuration
-  * R-Swift integration.
+* Scheme & XCConfig
+  * ProjectName-Debug: `Supporting Files/Config.Debug.xcconfig`
+  * ProjectName-Adhoc: `Supporting Files/Config.Adhoc.xcconfig`
+  * ProjectName-Release: `Supporting Files/Config.Release.xcconfig`
+
+* Build Settings
+  * Swift 4.0
+  * R-Swift
+  * Swift Lint
+  * Carthage, CocoaPod: ビルド速度向上のためCarthageメインです
   * Warnings for TODO and FIXME comments.
-  * Swift Lint integration.
-  * Crashlytics integration.
-  * `travis.yml` file.
-  * `podfile` containing most used libraries by us.
-    - Realm, Decodable, Alamofire, RxSwift, Eureka, OperaSwift and many others.
+  
+* ネットワーク
+  * Alamofire
+  
+* 非同期処理
+  * BrightFutures
 
-* Networking
-  * `Alamofire` networking library.
-  * `OperaSwift` network abstraction layer integrated along with some examples.
+* ユーティリティ
+  * [Cartfile](https://github.com/satoshin-IST/Swift-Project-Template/blob/develop/Project-iOS/XLProjectName/Cartfile)を参照
+
+* テスト
+  * Quick / Nimble 
+
+* その他 オプション (デフォルトではコメントアウト)
+  * PushNotification Module
+  * RealmSwift Module
 
 
 ##### Usage
