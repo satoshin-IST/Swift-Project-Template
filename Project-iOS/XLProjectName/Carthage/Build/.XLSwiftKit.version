@@ -1,0 +1,9 @@
+{
+  "commitish" : "3.0.0",
+  "iOS" : [
+    {
+      "name" : "XLSwiftKit",
+      "hash" : "cd42c76938c08b631734fca9c8d54a13fa7d23618ab4000401915c122910a7a6"
+    }
+  ]
+}

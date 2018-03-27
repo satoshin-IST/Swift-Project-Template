@@ -1,3 +1,4 @@
+#!/usr/bin/swift
 //
 //  main.swift
 //  Skelton
@@ -5,6 +6,7 @@
 //  Created by 佐藤 慎 on 2018/01/19.
 //  Copyright © 2018年 i-studio development team. All rights reserved.
 //
+
 
 import Foundation
 
@@ -212,8 +214,14 @@ for fileURL in directories.reversed() {
 //print(shell(args: "git", "remote", "add", "origin", "git@github.com:\(userName)/\(projectName).git").output)
 
 var name = projectSettings.name
+print("newProjectFolderPath = \(newProjectFolderPath)")
+
+print("carthage bootstrap --platform iOS --no-use-binaries --cache-builds")
+print(shell(path: "/\(newProjectFolderPath)/\(name)", args: "carthage", "bootstrap", "--platform", "iOS","--no-use-binaries","--cache-builds").output)
+
 print("pod install --project-directory=\(name) --no-repo-update\n")
 print(shell(path: newProjectFolderPath, args: "pod", "install", "--project-directory=\(name)").output)
+
+
 print("open \(name)/\(name).xcworkspace\n")
 print(shell(path: newProjectFolderPath, args: "open", "\(name)/\(name).xcworkspace").output)
-

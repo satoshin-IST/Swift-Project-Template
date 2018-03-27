@@ -7,17 +7,19 @@
 //
 
 import Foundation
-import Fabric
-import Crashlytics
+//import Fabric
+//import Crashlytics
 
+// 初回設定系Extension
 extension AppDelegate {
-
-    func setupCrashlytics() {
-        Fabric.with([Crashlytics.self])
-        Fabric.sharedSDK().debug = Constants.Debug.crashlytics
-    }
-    
-    func setupGoogleAnalytics() {
-        // TODO:
-    }
+//
+//    func setupCrashlytics() {
+//        Fabric.with([Crashlytics.self])
+//        Fabric.sharedSDK().debug = Constants.Debug.crashlytics
+//    }
+//
+//    func setupGoogleAnalytics() {
+//        // TODO:
+//    }
 }
+

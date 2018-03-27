@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import AlamofireImage
+import UIKit
 
 extension UIImageView {
     public func setImageWithURL(_ url: String,

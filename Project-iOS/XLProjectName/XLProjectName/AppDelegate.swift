@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,12 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        setupCrashlytics()
 
-        //UIApplication.requestPermissionToShowPushNotification()
-        //UIApplication.shared.registerForRemoteNotifications()
-        PushNotificationModule.shared.registerForRemote()
-        PushNotificationModule.shared.didFinishLaunching(options: launchOptions)
+//        PushNotificationModule.shared.registerForRemote()
+//        PushNotificationModule.shared.didFinishLaunching(options: launchOptions)
+        
         return true
     }
 
