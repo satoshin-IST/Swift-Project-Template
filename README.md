@@ -7,7 +7,7 @@
 * Targets
   * ProjectTarget: ヒューマンエラーを除去するためにTargetは一つです。
   * Tests: 
-  * UITests:
+  * UITests:
 
 * Scheme & XCConfig
   * ProjectName-Debug: `Supporting Files/Config.Debug.xcconfig`
