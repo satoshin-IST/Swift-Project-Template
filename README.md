@@ -23,6 +23,7 @@
 - [ ] Bluetoothe
 - [ ] GoogleAnalytics
 - [ ] Repro
+- [ ] Sourcery
 
 ## 使い方
 
