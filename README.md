@@ -20,7 +20,7 @@
 - [ ] Playground Driven Development
 - [ ] FBSnapshotTestCase
 - [ ] シェル実行時にプライバシー関連の質問でPlistを更新
-- [ ] Bluetoothe
+- [ ] Bluetooth
 - [ ] GoogleAnalytics
 - [ ] Repro
 - [ ] Sourcery
