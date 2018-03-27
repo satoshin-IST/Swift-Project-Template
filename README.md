@@ -60,6 +60,7 @@ Swift 4.0
   BrightFutures
 
 - ユーティリティ
+  SwiftLint
   R-Swift
   Device
   SwiftDate
