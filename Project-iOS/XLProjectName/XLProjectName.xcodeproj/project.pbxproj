@@ -30,6 +30,8 @@
 		22C05E1C206A1F9500146EFD /* PathResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C05E18206A1F9400146EFD /* PathResult.swift */; };
 		22C05E1D206A1F9500146EFD /* PathExtensionDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C05E19206A1F9500146EFD /* PathExtensionDir.swift */; };
 		22C05E1E206A1F9500146EFD /* PathExtensionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C05E1A206A1F9500146EFD /* PathExtensionFile.swift */; };
+		22C05E24206A2A0F00146EFD /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C05E22206A2A0F00146EFD /* LoadingIndicator.swift */; };
+		22C05E25206A2A0F00146EFD /* LoadingIndicatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C05E23206A2A0F00146EFD /* LoadingIndicatorService.swift */; };
 		22D295442069EF11000D4DF4 /* XLSwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D295432069EF11000D4DF4 /* XLSwiftKit.framework */; };
 		22D295472069F551000D4DF4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D295462069F551000D4DF4 /* R.generated.swift */; };
 		2867E82B1C74C7D400FCEBBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867E82A1C74C7D400FCEBBD /* AppDelegate.swift */; };
@@ -37,8 +39,6 @@
 		2867E8321C74C7D400FCEBBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2867E8311C74C7D400FCEBBD /* Assets.xcassets */; };
 		2867E8351C74C7D400FCEBBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2867E8331C74C7D400FCEBBD /* LaunchScreen.storyboard */; };
 		28FEB24C1C9875F60027D470 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FEB24B1C9875F60027D470 /* UIApplicationExtension.swift */; };
-		4653B7F51D7A14A0002A6660 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4653B7F41D7A14A0002A6660 /* LoadingIndicator.swift */; };
-		4653B7F81D7A1EB6002A6660 /* LoadingIndicatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4653B7F71D7A1EB6002A6660 /* LoadingIndicatorService.swift */; };
 		4B945363A28A1C6640411283 /* Pods_XLProjectName.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE523F7CE6A0E56FCF7A0A5 /* Pods_XLProjectName.framework */; };
 		8F0759921D7728360012D681 /* DEBUGHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759911D7728360012D681 /* DEBUGHelper.swift */; };
 		8F07599A1D7742CA0012D681 /* UIImageViewAlamofireExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759991D7742CA0012D681 /* UIImageViewAlamofireExtension.swift */; };
@@ -99,6 +99,8 @@
 		22C05E18206A1F9400146EFD /* PathResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathResult.swift; sourceTree = "<group>"; };
 		22C05E19206A1F9500146EFD /* PathExtensionDir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathExtensionDir.swift; sourceTree = "<group>"; };
 		22C05E1A206A1F9500146EFD /* PathExtensionFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathExtensionFile.swift; sourceTree = "<group>"; };
+		22C05E22206A2A0F00146EFD /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		22C05E23206A2A0F00146EFD /* LoadingIndicatorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorService.swift; sourceTree = "<group>"; };
 		22D295432069EF11000D4DF4 /* XLSwiftKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLSwiftKit.framework; path = Carthage/Build/iOS/XLSwiftKit.framework; sourceTree = "<group>"; };
 		22D295462069F551000D4DF4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = "R-Swift/R.generated.swift"; sourceTree = "<group>"; };
 		22EC61C82011E1440088F13F /* XLProjectName-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XLProjectName-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -110,8 +112,6 @@
 		2867E8341C74C7D400FCEBBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2867E8361C74C7D400FCEBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28FEB24B1C9875F60027D470 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = UIApplicationExtension.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		4653B7F41D7A14A0002A6660 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingIndicator.swift; path = Views/LoadingIndicator/LoadingIndicator.swift; sourceTree = "<group>"; };
-		4653B7F71D7A1EB6002A6660 /* LoadingIndicatorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingIndicatorService.swift; path = Views/LoadingIndicator/LoadingIndicatorService.swift; sourceTree = "<group>"; };
 		4E57F1A373849C3308E5FA57 /* Pods_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5447D68A31F540904DA06E64 /* Pods_XLProjectName_Staging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLProjectName_Staging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5428E1F88CA43202CA5CDD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +223,25 @@
 			path = FilePath;
 			sourceTree = "<group>";
 		};
+		22C05E21206A298900146EFD /* LoadingIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				22C05E22206A2A0F00146EFD /* LoadingIndicator.swift */,
+				22C05E23206A2A0F00146EFD /* LoadingIndicatorService.swift */,
+			);
+			path = LoadingIndicator;
+			sourceTree = "<group>";
+		};
+		22C05E26206A2A2400146EFD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2867E82A1C74C7D400FCEBBD /* AppDelegate.swift */,
+				8F0759A31D774C5C0012D681 /* AppDelegate+Configure.swift */,
+				22A269342011BB890040513E /* AppDelegate+PushNotification.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		22D295452069EF9E000D4DF4 /* Log */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,13 +300,8 @@
 		2867E8291C74C7D400FCEBBD /* XLProjectName */ = {
 			isa = PBXGroup;
 			children = (
-				2867E82A1C74C7D400FCEBBD /* AppDelegate.swift */,
-				8F0759A31D774C5C0012D681 /* AppDelegate+Configure.swift */,
-				22A269342011BB890040513E /* AppDelegate+PushNotification.swift */,
-				28C282381C7795B3003ECA4F /* Models */,
+				22C05E26206A2A2400146EFD /* AppDelegate */,
 				281BF19B1C7B8EEF00809E3F /* Networking */,
-				28C282391C7795DB003ECA4F /* Controllers */,
-				28C282361C779580003ECA4F /* Views */,
 				28C282371C7795A2003ECA4F /* Helpers */,
 				281731661C9B6D43006237C7 /* Stoyboards */,
 				8F0759951D772AD90012D681 /* Resources */,
@@ -296,17 +310,10 @@
 			path = XLProjectName;
 			sourceTree = "<group>";
 		};
-		28C282361C779580003ECA4F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4653B7F31D7A145A002A6660 /* LoadingIndicator */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		28C282371C7795A2003ECA4F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				22C05E21206A298900146EFD /* LoadingIndicator */,
 				22C05E16206A1F6B00146EFD /* FilePath */,
 				22D295452069EF9E000D4DF4 /* Log */,
 				071FBD6B20283FF4005F0D96 /* PushNotification */,
@@ -315,20 +322,6 @@
 				28C282411C7797CA003ECA4F /* Extensions */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		28C282381C7795B3003ECA4F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		28C282391C7795DB003ECA4F /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		28C282411C7797CA003ECA4F /* Extensions */ = {
@@ -365,15 +358,6 @@
 				A0329BB8D392449C180AB066 /* Pods_XLProjectNameUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4653B7F31D7A145A002A6660 /* LoadingIndicator */ = {
-			isa = PBXGroup;
-			children = (
-				4653B7F41D7A14A0002A6660 /* LoadingIndicator.swift */,
-				4653B7F71D7A1EB6002A6660 /* LoadingIndicatorService.swift */,
-			);
-			name = LoadingIndicator;
 			sourceTree = "<group>";
 		};
 		5EE537605AFB39F1AD1482CF /* Pods */ = {
@@ -754,12 +738,12 @@
 				8F0759A71D774FC10012D681 /* RealmProvider.swift in Sources */,
 				22D295472069F551000D4DF4 /* R.generated.swift in Sources */,
 				22C05E1C206A1F9500146EFD /* PathResult.swift in Sources */,
-				4653B7F51D7A14A0002A6660 /* LoadingIndicator.swift in Sources */,
+				22C05E24206A2A0F00146EFD /* LoadingIndicator.swift in Sources */,
 				071FBD6F202843D2005F0D96 /* NotificationPayload.swift in Sources */,
 				8F0759921D7728360012D681 /* DEBUGHelper.swift in Sources */,
 				2867E82B1C74C7D400FCEBBD /* AppDelegate.swift in Sources */,
 				07643DEE20512F0200986CA9 /* BundleExtension.swift in Sources */,
-				4653B7F81D7A1EB6002A6660 /* LoadingIndicatorService.swift in Sources */,
+				22C05E25206A2A0F00146EFD /* LoadingIndicatorService.swift in Sources */,
 				8F0759A41D774C5C0012D681 /* AppDelegate+Configure.swift in Sources */,
 				22C05E1B206A1F9500146EFD /* Path.swift in Sources */,
 				225A6EC12022AF170081DAD8 /* RealmHelper.swift in Sources */,
