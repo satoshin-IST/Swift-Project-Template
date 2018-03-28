@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 //        PushNotificationModule.shared.registerForRemote()
 //        PushNotificationModule.shared.didFinishLaunching(options: launchOptions)
+//        Log.debug("デバッグログのテスト")
+//        Log.fatal("fatale Errorのメッセージ")
         
         return true
     }

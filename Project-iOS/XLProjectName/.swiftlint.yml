@@ -12,6 +12,7 @@ disabled_rules:
   - force_try               # try!
   - explicit_type_interface # プロパティ宣言時の型の明記必須
   - fatal_error_message     # fataleError呼び出し時のメッセージ必須
+  - switch_case_on_newline  # switch文におけるcaseの各処理は改行した後書く
 
 # error 扱いにするルール
 force_cast: error              # [NG] as!
