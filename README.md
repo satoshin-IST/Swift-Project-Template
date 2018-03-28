@@ -5,7 +5,7 @@
 ## Features
 
 - [x] 対話型でプロジェクト設定
-- [x] 標準ライブラリ自動インストール
+- [x] 標準ライブラリ自動インストール(メイン:Carthage, サブ:CocoaPod)
 - [x] SwiftLint
 - [x] R-Swift
 - [x] Push通知用モジュール
