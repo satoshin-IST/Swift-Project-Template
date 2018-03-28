@@ -93,12 +93,9 @@ struct PushNotificationModule {
         }
         
         switch application.applicationState {
-        case .active:
-            activeStateBehavior(with: payload)
-        case .inactive:
-            inActiveStateBehavior(with: payload)
-        case .background:
-            return
+        case .active: activeStateBehavior(with: payload)
+        case .inactive: inActiveStateBehavior(with: payload)
+        case .background: return
         }
     }
     

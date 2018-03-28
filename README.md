@@ -2,6 +2,12 @@
 
 `Skelton.swif`を実行してiOS用各種設定が構築済みのプロジェクトを生成できます。
 
+<p align="left">
+<img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
+<img src="https://img.shields.io/badge/Swift%204.0-compatible-brightgreen.svg?style=flat" alt="Swift 4 compatible" />
+<img src="https://img.shields.io/badge/Deployment%20Target-10.0%E3%80%9C-orange.svg?style=flat" alt="Deployment Target" />
+</p>
+
 ## TODO
 
 - [x] 対話型でプロジェクト設定
