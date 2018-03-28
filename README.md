@@ -2,7 +2,7 @@
 
 `Skelton.swif`を実行してiOS用各種設定が構築済みのプロジェクトを生成できます。
 
-## Features
+## TODO
 
 - [x] 対話型でプロジェクト設定
 - [x] 標準ライブラリ自動インストール(メイン:Carthage, サブ:CocoaPod)
@@ -12,6 +12,7 @@
 - [x] RealmSwift用モジュール
 - [x] ビルド最適化(Optimization Level, Swift Other Flags)
 - [x] xcconfig & schemeによる環境切り分け
+- [ ] UnitTest
 - [ ] Jazzy
 - [ ] Swagger
 - [ ] Fastlane, EMLauncher
