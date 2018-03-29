@@ -105,7 +105,6 @@
 		22C05E23206A2A0F00146EFD /* LoadingIndicatorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorService.swift; sourceTree = "<group>"; };
 		22C0CEAC206B7FC000A62DA6 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
 		22C0D228206C7D13004168B1 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		22C0D22A206C8FF5004168B1 /* Exclusion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Exclusion.framework; path = Carthage/Build/iOS/Exclusion.framework; sourceTree = "<group>"; };
 		22D295462069F551000D4DF4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = "R-Swift/R.generated.swift"; sourceTree = "<group>"; };
 		22EC61C82011E1440088F13F /* XLProjectName-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XLProjectName-Bridging-Header.h"; sourceTree = "<group>"; };
 		2841F2041CCFF55600D609CE /* Info-Staging.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Staging.plist"; sourceTree = "<group>"; };
@@ -350,7 +349,6 @@
 		2E82DB69CE8E114B033D890A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				22C0D22A206C8FF5004168B1 /* Exclusion.framework */,
 				22C0CEAC206B7FC000A62DA6 /* Nuke.framework */,
 				229B3783206A2C3F0013DD82 /* Nimble.framework */,
 				229B3782206A2C3F0013DD82 /* Quick.framework */,
