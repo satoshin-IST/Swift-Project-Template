@@ -1,0 +1,11 @@
+framework module Exclusion {
+  umbrella header "Exclusion.h"
+
+  export *
+  module * { export * }
+}
+
+module Exclusion.Swift {
+    header "Exclusion-Swift.h"
+    requires objc
+}

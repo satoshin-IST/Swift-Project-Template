@@ -1,4 +1,0 @@
-framework module NukeAlamofirePlugin {
-    header "NukeAlamofirePlugin-Swift.h"
-    requires objc
-}
