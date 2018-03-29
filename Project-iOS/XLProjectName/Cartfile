@@ -21,9 +21,6 @@ github "ninjaprox/NVActivityIndicatorView"
 #===ImageLoader
 github "kean/Nuke" ~> 6.0
 
-#===URLCache
-github "KyoheiG3/Exclusion"
-
 #===DB
 #github "realm/realm-cocoa"
 
