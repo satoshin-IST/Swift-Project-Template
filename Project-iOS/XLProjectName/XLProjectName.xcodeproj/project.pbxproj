@@ -32,6 +32,7 @@
 		22C05E24206A2A0F00146EFD /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C05E22206A2A0F00146EFD /* LoadingIndicator.swift */; };
 		22C05E25206A2A0F00146EFD /* LoadingIndicatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C05E23206A2A0F00146EFD /* LoadingIndicatorService.swift */; };
 		22C0CEAD206B7FC000A62DA6 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C0CEAC206B7FC000A62DA6 /* Nuke.framework */; };
+		22C0D226206C7BB7004168B1 /* NukeAlamofirePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C0D225206C7BB7004168B1 /* NukeAlamofirePlugin.framework */; };
 		22D295472069F551000D4DF4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D295462069F551000D4DF4 /* R.generated.swift */; };
 		22F9F254206A2E6100FDD012 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229B3782206A2C3F0013DD82 /* Quick.framework */; };
 		22F9F255206A2E6100FDD012 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229B3783206A2C3F0013DD82 /* Nimble.framework */; };
@@ -104,6 +105,7 @@
 		22C05E22206A2A0F00146EFD /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		22C05E23206A2A0F00146EFD /* LoadingIndicatorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorService.swift; sourceTree = "<group>"; };
 		22C0CEAC206B7FC000A62DA6 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
+		22C0D225206C7BB7004168B1 /* NukeAlamofirePlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NukeAlamofirePlugin.framework; path = Carthage/Build/iOS/NukeAlamofirePlugin.framework; sourceTree = "<group>"; };
 		22D295432069EF11000D4DF4 /* XLSwiftKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLSwiftKit.framework; path = Carthage/Build/iOS/XLSwiftKit.framework; sourceTree = "<group>"; };
 		22D295462069F551000D4DF4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = "R-Swift/R.generated.swift"; sourceTree = "<group>"; };
 		22EC61C82011E1440088F13F /* XLProjectName-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XLProjectName-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C0D226206C7BB7004168B1 /* NukeAlamofirePlugin.framework in Frameworks */,
 				22C0CEAD206B7FC000A62DA6 /* Nuke.framework in Frameworks */,
 				226D8FB82068CB1C00A341BB /* Alamofire.framework in Frameworks */,
 				226D8FB42068CB0000A341BB /* Device.framework in Frameworks */,
@@ -340,6 +343,7 @@
 		2E82DB69CE8E114B033D890A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22C0D225206C7BB7004168B1 /* NukeAlamofirePlugin.framework */,
 				22C0CEAC206B7FC000A62DA6 /* Nuke.framework */,
 				229B3783206A2C3F0013DD82 /* Nimble.framework */,
 				229B3782206A2C3F0013DD82 /* Quick.framework */,
@@ -564,6 +568,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftDate.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NukeAlamofirePlugin.framework",
 			);
 			name = Carthage;
 			outputPaths = (
