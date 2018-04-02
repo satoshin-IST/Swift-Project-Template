@@ -6,6 +6,7 @@
 <img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
 <img src="https://img.shields.io/badge/Swift%204.0-compatible-brightgreen.svg?style=flat" alt="Swift 4 compatible" />
 <img src="https://img.shields.io/badge/Deployment%20Target-10.0%E3%80%9C-orange.svg?style=flat" alt="Deployment Target" />
+<img src="https://img.shields.io/badge/Xcode-9.2-blue.svg?style=flat" alt="Xcode" />
 </p>
 
 ## TODO
@@ -18,7 +19,7 @@
 - [x] RealmSwift用モジュール
 - [x] ビルド最適化(Optimization Level, Swift Other Flags)
 - [x] xcconfig & schemeによる環境切り分け
-- [ ] UnitTest
+- [x] HTTPレスポンスヘッダの有効期限に従う画像ローダーのキャッシュ設定
 - [ ] Jazzy
 - [ ] Swagger
 - [ ] Fastlane, EMLauncher
@@ -29,8 +30,8 @@
 - [ ] シェル実行時にプライバシー関連の質問でPlistを更新
 - [ ] Bluetooth
 - [ ] GoogleAnalytics
-- [ ] Repro
 - [ ] Sourcery
+
 
 ## 使い方
 
@@ -75,10 +76,15 @@ Swift 4.0
 
 **ビルド速度向上のため** Carthageをメインとしています。
 
+以下をテーブル表示に
+
 ```
 - ネットワーク
   Alamofire
-  
+
+- 画像ローダー
+  Nuke
+
 - 非同期処理
   BrightFutures
 

@@ -10,7 +10,6 @@
 
 #===Network
 github "Alamofire/Alamofire" ~> 4.7
-github "Alamofire/AlamofireImage" ~> 3.3
 github "johnsundell/unbox"
 
 #===Async
@@ -18,6 +17,9 @@ github "Thomvis/BrightFutures"
 
 #===UI
 github "ninjaprox/NVActivityIndicatorView"
+
+#===ImageLoader
+github "kean/Nuke" ~> 6.0
 
 #===DB
 #github "realm/realm-cocoa"
