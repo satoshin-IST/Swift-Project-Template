@@ -1,10 +1,15 @@
 
 #===NOTE
 # 
-# 基本的な標準ライブラリ以外はOption扱いとしてコメントアウトしています
-# 追加する場合は 「LinkBinary With Libraries」「RunScript(Carthage)」の編集を行って下さい。 
+# コメントアウトしているものはOption扱いです
 #
-# 参考
+# 有効にする場合
+#
+# 0. 対象をコメントアウト
+# 1.「carthage update --platform iOS --no-use-binaries --cache-builds」を実行
+# 2.「LinkBinary With Libraries」「RunScript(Carthage)」に追加
+#
+# Carthage参考
 # https://bit.ly/2IU8Jzg
 #
 
@@ -24,11 +29,16 @@ github "kean/Nuke" ~> 6.0
 #===DB
 #github "realm/realm-cocoa"
 
+#===ファイル保存
+#github "saoudrizwan/Disk"
+
 #===utility
 github "Ekhoo/Device" ~> 3.0.3
 github "malcommac/SwiftDate" ~> 4.5.1
 #github "malcommac/SwiftLocation"
 #github "kishikawakatsumi/KeychainAccess"
+
+
 
 #===PushNotification
 #github "NIFTYCloud-mbaas/ncmb_ios"
