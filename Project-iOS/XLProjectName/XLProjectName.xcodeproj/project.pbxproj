@@ -13,6 +13,13 @@
 		2233E930202190C200CFE6A3 /* XLProjectNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E92F202190C200CFE6A3 /* XLProjectNameTests.swift */; };
 		2233E93F202190DB00CFE6A3 /* XLProjectNameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E93E202190DB00CFE6A3 /* XLProjectNameUITests.swift */; };
 		2233E9482021923300CFE6A3 /* RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233E9472021923300CFE6A3 /* RealmTests.swift */; };
+		223B487D2071D7C7006061EA /* ImageLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223B487C2071D7C7006061EA /* ImageLoaderTests.swift */; };
+		223B487E2071D964006061EA /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C0CEAC206B7FC000A62DA6 /* Nuke.framework */; };
+		2244D344206CA3FF00622A77 /* MoreCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244D343206CA3FF00622A77 /* MoreCache.swift */; };
+		2244D348206CA46D00622A77 /* HTTPURLResponse+CacheControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244D347206CA46D00622A77 /* HTTPURLResponse+CacheControl.swift */; };
+		2244D34A206CA48A00622A77 /* HTTPURLResponse+Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244D349206CA48A00622A77 /* HTTPURLResponse+Header.swift */; };
+		2244D34C206DD08300622A77 /* MoreCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244D34B206DD08300622A77 /* MoreCacheTests.swift */; };
+		2244D34E206DD42B00622A77 /* HTTPURLResponseExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244D34D206DD42B00622A77 /* HTTPURLResponseExtensionsTests.swift */; };
 		225A6EBF2022AB9C0081DAD8 /* ObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A6EBE2022AB9C0081DAD8 /* ObjectExtension.swift */; };
 		225A6EC12022AF170081DAD8 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A6EC02022AF170081DAD8 /* RealmHelper.swift */; };
 		225A6EC32022C6DD0081DAD8 /* ResultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A6EC22022C6DD0081DAD8 /* ResultsExtension.swift */; };
@@ -80,6 +87,12 @@
 		2233E93E202190DB00CFE6A3 /* XLProjectNameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLProjectNameUITests.swift; sourceTree = "<group>"; };
 		2233E940202190DB00CFE6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2233E9472021923300CFE6A3 /* RealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTests.swift; sourceTree = "<group>"; };
+		223B487C2071D7C7006061EA /* ImageLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderTests.swift; sourceTree = "<group>"; };
+		2244D343206CA3FF00622A77 /* MoreCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCache.swift; sourceTree = "<group>"; };
+		2244D347206CA46D00622A77 /* HTTPURLResponse+CacheControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+CacheControl.swift"; sourceTree = "<group>"; };
+		2244D349206CA48A00622A77 /* HTTPURLResponse+Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Header.swift"; sourceTree = "<group>"; };
+		2244D34B206DD08300622A77 /* MoreCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCacheTests.swift; sourceTree = "<group>"; };
+		2244D34D206DD42B00622A77 /* HTTPURLResponseExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPURLResponseExtensionsTests.swift; sourceTree = "<group>"; };
 		225A6EBE2022AB9C0081DAD8 /* ObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectExtension.swift; sourceTree = "<group>"; };
 		225A6EC02022AF170081DAD8 /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		225A6EC22022C6DD0081DAD8 /* ResultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsExtension.swift; sourceTree = "<group>"; };
@@ -145,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223B487E2071D964006061EA /* Nuke.framework in Frameworks */,
 				22F9F254206A2E6100FDD012 /* Quick.framework in Frameworks */,
 				22F9F255206A2E6100FDD012 /* Nimble.framework in Frameworks */,
 			);
@@ -188,9 +202,12 @@
 		2233E92E202190C200CFE6A3 /* XLProjectNameTests */ = {
 			isa = PBXGroup;
 			children = (
-				2233E92F202190C200CFE6A3 /* XLProjectNameTests.swift */,
-				2233E9472021923300CFE6A3 /* RealmTests.swift */,
 				2233E931202190C200CFE6A3 /* Info.plist */,
+				2244D34D206DD42B00622A77 /* HTTPURLResponseExtensionsTests.swift */,
+				223B487C2071D7C7006061EA /* ImageLoaderTests.swift */,
+				2244D34B206DD08300622A77 /* MoreCacheTests.swift */,
+				2233E9472021923300CFE6A3 /* RealmTests.swift */,
+				2233E92F202190C200CFE6A3 /* XLProjectNameTests.swift */,
 			);
 			path = XLProjectNameTests;
 			sourceTree = "<group>";
@@ -202,6 +219,16 @@
 				2233E940202190DB00CFE6A3 /* Info.plist */,
 			);
 			path = XLProjectNameUITests;
+			sourceTree = "<group>";
+		};
+		2244D32F206C9FE500622A77 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				2244D343206CA3FF00622A77 /* MoreCache.swift */,
+				2244D347206CA46D00622A77 /* HTTPURLResponse+CacheControl.swift */,
+				2244D349206CA48A00622A77 /* HTTPURLResponse+Header.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 		225A6EBD2022AB4C0081DAD8 /* Realm */ = {
@@ -249,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				22C0D228206C7D13004168B1 /* ImageLoader.swift */,
+				2244D32F206C9FE500622A77 /* Cache */,
 			);
 			path = ImageLoader;
 			sourceTree = "<group>";
@@ -587,6 +615,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
 			);
 			outputPaths = (
 			);
@@ -736,6 +765,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223B487D2071D7C7006061EA /* ImageLoaderTests.swift in Sources */,
+				2244D34E206DD42B00622A77 /* HTTPURLResponseExtensionsTests.swift in Sources */,
+				2244D34C206DD08300622A77 /* MoreCacheTests.swift in Sources */,
 				2233E930202190C200CFE6A3 /* XLProjectNameTests.swift in Sources */,
 				2233E9482021923300CFE6A3 /* RealmTests.swift in Sources */,
 			);
@@ -756,6 +788,7 @@
 				28FEB24C1C9875F60027D470 /* UIApplicationExtension.swift in Sources */,
 				226987FF2011F78B00FB86C4 /* NSPredicateExtension.swift in Sources */,
 				22C05E1D206A1F9500146EFD /* PathExtensionDir.swift in Sources */,
+				2244D348206CA46D00622A77 /* HTTPURLResponse+CacheControl.swift in Sources */,
 				071FBD6D202840BA005F0D96 /* PushNotificationModule.swift in Sources */,
 				225A6EC32022C6DD0081DAD8 /* ResultsExtension.swift in Sources */,
 				225A6EBF2022AB9C0081DAD8 /* ObjectExtension.swift in Sources */,
@@ -768,6 +801,8 @@
 				071FBD6F202843D2005F0D96 /* NotificationPayload.swift in Sources */,
 				8F0759921D7728360012D681 /* Log.swift in Sources */,
 				22C0D229206C7D13004168B1 /* ImageLoader.swift in Sources */,
+				2244D344206CA3FF00622A77 /* MoreCache.swift in Sources */,
+				2244D34A206CA48A00622A77 /* HTTPURLResponse+Header.swift in Sources */,
 				2867E82B1C74C7D400FCEBBD /* AppDelegate.swift in Sources */,
 				07643DEE20512F0200986CA9 /* BundleExtension.swift in Sources */,
 				22C05E25206A2A0F00146EFD /* LoadingIndicatorService.swift in Sources */,

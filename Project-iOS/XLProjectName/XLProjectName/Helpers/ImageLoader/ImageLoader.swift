@@ -13,22 +13,24 @@ class ImageLoader {
     
     static let shared = ImageLoader()
     
+    // デフォルトのキャッシュ設定
     static var defaultConfig: URLSessionConfiguration {
         let config = URLSessionConfiguration.default
         let urlCache = Nuke.DataLoader.sharedUrlCache
         
         // `expires → max-age` の順にキャッシュを確認する
-
-        // キャッシュ多用する
+        config.urlCache = MoreCache(memoryCapacity: urlCache.memoryCapacity, diskCapacity: urlCache.diskCapacity, diskPath: "")
+        
+        // NOTE: NSURLRequestReturnCacheDataElseLoad
+        // 有効期限または有効期限に関係なく既存のキャッシュデータを使用して要求を満たす必要があることを指定。
+        // 要求に対応するキャッシュに既存のデータがない場合、データは元のソースからロードされる。
         config.requestCachePolicy = .returnCacheDataElseLoad
         return config
     }
     
-//    let nuke = { () -> Nuke.Manager in
-//
-////        let loader = Nuke.Loader(loader: NukeAlamofirePlugin.DataLoader())
-////        return Nuke.Manager(loader: loader, cache: Cache.shared)
-//    }()
-    
-    
+    // キャッシュ設定を反映した Nuke.Manager
+    let nuke = { () -> Nuke.Manager in
+        let loader = Nuke.Loader(loader: Nuke.DataLoader(configuration: defaultConfig))
+        return Nuke.Manager(loader: loader, cache: Cache.shared)
+    }()
 }
