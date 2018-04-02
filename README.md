@@ -72,33 +72,29 @@ Swift 4.0
   ProjectName-Release: `Supporting Files/Config.Release.xcconfig`
 ```
 
-## ライブラリ基本設定
+## ライブラリ
 
 **ビルド速度向上のため** Carthageをメインとしています。
 
-以下をテーブル表示に
+デフォルト以外を導入する場合は `Cartfile/Podfile` を適宜設定して下さい。
 
-```
-- ネットワーク
-  Alamofire
-
-- 画像ローダー
-  Nuke
-
-- 非同期処理
-  BrightFutures
-
-- ユーティリティ
-  SwiftLint
-  R-Swift
-  Device
-  SwiftDate
-  XLSwiftKit
-
-- テスト
-  Quick / Nimble 
-
-- その他 
-  Cartfileを参照して下さい
-    (https://github.com/satoshin-IST/Swift-Project-Template/blob/develop/Project-iOS/XLProjectName/Cartfile) 
-```
+| ジャンル | ライブラリ名 | Carthage or Cocoapod | デフォルト | 備考 | 
+| :-: | :-: | :-: | :-: | :-: | 
+| ユーティリティ (typo除去) | [R-Swift](https://github.com/mac-cain13/R.swift) | pod | ◯ | | 
+| 静的解析ツール | [SwiftLint](https://github.com/realm/SwiftLint) | pod | ◯ | | 
+| 通信クライアント | [Alamofire](https://github.com/Alamofire/Alamofire) | carthage | ◯ | | 
+| 画像ローダー | [Nuke](https://github.com/kean/Nuke) | carthage | ◯ | [カスタムのURLCache](https://github.com/satoshin-IST/Swift-Project-Template/blob/develop/Project-iOS/XLProjectName/XLProjectName/Helpers/ImageLoader/Cache/MoreCache.swift)を利用 | 
+| テスト | [Quick](https://github.com/Quick/Quick) | carthage | ◯ | | 
+| テスト | [Nimble](https://github.com/Quick/Nimble) | carthage | ◯ | | 
+| ユーティリティ | [Swift-Date](https://github.com/malcommac/SwiftDate) | carthage  | ◯ | | 
+| ユーティリティ | [Device](https://github.com/Ekhoo/Device) | carthage  | ◯ | | 
+| 位置情報 | [SwiftLocation](https://github.com/malcommac/SwiftLocation) | carthage  | | | 
+| ファイル保存 | [Disk](https://github.com/saoudrizwan/Disk) | carthage  | | | 
+| キーチェーン | [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess) | carthage  | | | 
+| Push通知 | [ncmb_ios](https://github.com/NIFCloud-mbaas/ncmb_ios) | carthage  | | | 
+| Push通知(他) | [Firebase](https://github.com/firebase/firebase-ios-sdk) | pod  | | | 
+| Push通知(他) | [aws/aws-sdk-ios](https://github.com/aws/aws-sdk-ios) | carthage  | | | 
+| DB | [RealmSwift](https://realm.io/docs/swift/latest) | carthage  | | | 
+| UI(ローディングインジケータ) | [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView) | carthage  | ◯ | デザイン要確認 | 
+| 非同期処理 | [BrightFutures](https://github.com/Thomvis/BrightFutures) | carthage  | ◯ |  | 
+| リアクティブ | [RxSwift](https://github.com/ReactiveX/RxSwift) | carthage  | |  | 
