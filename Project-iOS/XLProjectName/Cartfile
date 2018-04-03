@@ -20,6 +20,9 @@ github "johnsundell/unbox"
 #===Async
 github "Thomvis/BrightFutures"
 
+#===Routing
+github "hyperoslo/Compass"
+
 #===UI
 github "ninjaprox/NVActivityIndicatorView"
 

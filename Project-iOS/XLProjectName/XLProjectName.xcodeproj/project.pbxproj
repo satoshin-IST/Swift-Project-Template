@@ -199,6 +199,13 @@
 			path = PushNotification;
 			sourceTree = "<group>";
 		};
+		220618602073116000BB6B4C /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 		2233E92E202190C200CFE6A3 /* XLProjectNameTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,13 +296,13 @@
 			path = Log;
 			sourceTree = "<group>";
 		};
-		281731661C9B6D43006237C7 /* Stoyboards */ = {
+		281731661C9B6D43006237C7 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				2867E82E1C74C7D400FCEBBD /* Main.storyboard */,
 				2867E8331C74C7D400FCEBBD /* LaunchScreen.storyboard */,
 			);
-			name = Stoyboards;
+			name = Storyboards;
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
@@ -340,10 +347,11 @@
 			isa = PBXGroup;
 			children = (
 				22C05E26206A2A2400146EFD /* AppDelegate */,
-				281BF19B1C7B8EEF00809E3F /* Networking */,
 				28C282371C7795A2003ECA4F /* Helpers */,
-				281731661C9B6D43006237C7 /* Stoyboards */,
+				281BF19B1C7B8EEF00809E3F /* Networking */,
 				8F0759951D772AD90012D681 /* Resources */,
+				220618602073116000BB6B4C /* Routing */,
+				281731661C9B6D43006237C7 /* Storyboards */,
 				8F0759941D772AA50012D681 /* Supporting Files */,
 			);
 			path = XLProjectName;
