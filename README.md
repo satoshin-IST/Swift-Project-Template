@@ -81,7 +81,7 @@ Swift 4.0
 | ジャンル | ライブラリ名 | Carthage or Cocoapod | デフォルト | 備考 | 
 | :-: | :-: | :-: | :-: | :-: | 
 | ユーティリティ (typo除去) | [R-Swift](https://github.com/mac-cain13/R.swift) | pod | ◯ | | 
-| 静的解析ツール | [SwiftLint](https://github.com/realm/SwiftLint) | pod | ◯ | | 
+| 静的解析ツール | [SwiftLint](https://github.com/realm/SwiftLint) | pod | ◯ | [カスタムのルール](https://github.com/satoshin-IST/Swift-Project-Template/blob/develop/Project-iOS/XLProjectName/.swiftlint.yml)設定済み | 
 | 通信クライアント | [Alamofire](https://github.com/Alamofire/Alamofire) | carthage | ◯ | | 
 | 画像ローダー | [Nuke](https://github.com/kean/Nuke) | carthage | ◯ | [カスタムのURLCache](https://github.com/satoshin-IST/Swift-Project-Template/blob/develop/Project-iOS/XLProjectName/XLProjectName/Helpers/ImageLoader/Cache/MoreCache.swift)を利用 | 
 | テスト | [Quick](https://github.com/Quick/Quick) | carthage | ◯ | | 
