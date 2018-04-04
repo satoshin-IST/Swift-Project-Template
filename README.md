@@ -55,22 +55,25 @@ We are done! Now start coding your app! 🍻🍻
 
 ## プロジェクト基本設定
 
-**Targets指定漏れ対策やビルド時間短縮のため** 環境毎の設定は`Scheme & xcconfig`で行っています。
+### Target と Scheme
 
-```
-Xcode 9.2
-Swift 4.0
+ファイル追加時の設定漏れやビルド速度向上のためTargetは一つです。
 
-- Targets
-  ProjectTarget
-  Tests
-  UITests
-  
-- Scheme & xcconfig
-  ProjectName-Debug: `Supporting Files/Config.Debug.xcconfig`
-  ProjectName-Adhoc: `Supporting Files/Config.Adhoc.xcconfig`
-  ProjectName-Release: `Supporting Files/Config.Release.xcconfig`
-```
+**環境で切り替えたい場合** は後述の `.xcconfig` の各ファイルにて
+
+環境変数を設定・内容を切り替えてください。
+
+![](https://user-images.githubusercontent.com/22883147/38296196-8dba0484-382b-11e8-8fc2-9c8b3709b6fb.png)
+
+![](https://user-images.githubusercontent.com/22883147/38296202-9409df44-382b-11e8-9786-619f4ea4c00b.png)
+
+### xcconfig
+
+[参考: なぜxcconfigを使うのか？（ターゲット利用の弱点）](https://bit.ly/2uLuXAx)
+
+![](https://user-images.githubusercontent.com/22883147/38296199-9099e02a-382b-11e8-8db0-bb66e1f9c1fa.png)
+
+
 
 ## ライブラリ
 
