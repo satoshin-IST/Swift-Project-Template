@@ -29,7 +29,7 @@
 			<string>XLOrganizationIdentifier.XLProjectName.debug</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>compassSample</string>
+				<string>XLProjectName</string>
 			</array>
 		</dict>
 	</array>

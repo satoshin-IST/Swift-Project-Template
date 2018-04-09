@@ -44,6 +44,7 @@ enum Routes {
     case sampleLogin            // SampleLoginVCへの遷移
 }
 
+// 遷移先設定用 extension
 extension Routes: RawRepresentable {
     typealias RawValue = String
     
@@ -67,30 +68,37 @@ extension Routes: RawRepresentable {
 /**
  SampleTopViewControllerへの遷移例
  
- CustomRoutableに準拠する
+ CustomRoutableに準拠して遷移先スキームと具体的な遷移の処理を実装する
+ URLScheme =>「XLProjectName://top:1234567」でSafariから確認可能
  */
 struct SampleTopRoute: CustomRoutable {
+    // 一意のkeyを設定する
     static var key: String {
         return "top:{userID}"
     }
+    // 遷移処理を実装する
     func navigate(to location: Location, from currentController: CurrentController) throws {
-        
         let navigationController = currentController as? UINavigationController
         
-        guard let topVC = (navigationController.flatMap { (naviVC) -> SampleTopViewController? in
+        if let topVC = (navigationController.flatMap { (naviVC) -> SampleTopViewController? in
             return naviVC.viewControllers.filter { $0.isKind(of: SampleTopViewController.self) }.first as? SampleTopViewController
-        }) else {
-            Log.debug("スタックにSampleTopViewControllerが無いと困る")
-            return
-        }
-        topVC.articleID = location.arguments["userID"]
-        
-       if let naviVC = navigationController {
-            naviVC.popToViewController(topVC, animated: true)
-        }
-        
-        if currentController.presentedViewController != nil {
-            currentController.dismiss(animated: true, completion: nil)
+        }) {
+            topVC.articleID = location.arguments["userID"]
+            
+            if let naviVC = navigationController {
+                naviVC.popToViewController(topVC, animated: true)
+            }
+            
+            if currentController.presentedViewController != nil {
+                currentController.dismiss(animated: true, completion: nil)
+            }
+        } else {
+            //
+            guard let vc = R.storyboard.sampleRoutingStoryboard.sampleTopViewController() else { return }
+            vc.articleID = location.arguments["userID"]
+            if let currentVC = currentController as? UINavigationController {
+                currentVC.pushViewController(vc, animated: true)
+            }
         }
     }
 }
@@ -98,12 +106,15 @@ struct SampleTopRoute: CustomRoutable {
 /**
  SampleTopViewControllerへの遷移例
  
- CustomRoutableに準拠する
+ CustomRoutableに準拠して遷移先スキームと具体的な遷移の処理を実装する
+ URLScheme =>「XLProjectName://detail:1234567」でSafariから確認可能
  */
 struct SampleDetailRoute: CustomRoutable {
+    // 一意のkeyを設定する
     static var key: String {
         return "detail:{articleID}"
     }
+    // 遷移処理を実装する
     func navigate(to location: Location, from currentController: CurrentController) throws {
         guard let articleID = location.arguments["articleID"] else { return }
         guard let vc = R.storyboard.sampleRoutingStoryboard.sampleDetailViewController() else { return }
@@ -115,14 +126,17 @@ struct SampleDetailRoute: CustomRoutable {
 }
 
 /**
- SampleTopViewControllerへの遷移例
+ SampleLoginViewControllerへの遷移例
  
- CustomRoutableに準拠する
+ CustomRoutableに準拠して遷移先スキームと具体的な遷移の処理を実装する
+ URLScheme =>「XLProjectName://login」でSafariから確認可能
  */
 struct SampleLoginRoute: CustomRoutable {
+    // 一意のkeyを設定する
     static var key: String {
         return "login"
     }
+    // 遷移処理を実装する
     func navigate(to location: Location, from currentController: CurrentController) throws {
         guard let vc = R.storyboard.sampleRoutingStoryboard.sampleLoginNavigationController() else { return }
         guard let topmostVC = currentController.topmostViewController else {

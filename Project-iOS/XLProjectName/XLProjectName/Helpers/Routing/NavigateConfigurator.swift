@@ -27,7 +27,7 @@ public class NavigateConfigurator: Navigatable {
     
     public static let shared = NavigateConfigurator()
     
-    public var scheme: String = "compassSample"
+    public var scheme: String = "XLProjectName"
     
     public var routes: [String: Routable] = [
         SampleTopRoute.key: SampleTopRoute(),
