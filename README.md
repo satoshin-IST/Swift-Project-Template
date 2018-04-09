@@ -20,6 +20,7 @@
 - [x] ビルド最適化(Optimization Level, Swift Other Flags)
 - [x] xcconfig & schemeによる環境切り分け
 - [x] HTTPレスポンスヘッダの有効期限に従う画像ローダーのキャッシュ設定
+- [x] URLスキーム・画面遷移用ルーティング
 - [ ] Jazzy
 - [ ] Swagger
 - [ ] Fastlane, EMLauncher
