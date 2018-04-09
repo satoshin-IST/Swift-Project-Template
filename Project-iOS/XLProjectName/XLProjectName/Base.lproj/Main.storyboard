@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fwb-rM-UXC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jJA-bb-Y7w">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -20,12 +20,50 @@
                     <view key="view" contentMode="scaleToFill" id="uvC-EL-1kn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAW-ma-Lkc">
+                                <rect key="frame" x="131.66666666666666" y="391" width="111" height="30"/>
+                                <state key="normal" title="RoutingExample"/>
+                                <connections>
+                                    <segue destination="9Lw-Dx-6Sk" kind="show" id="pgR-b8-bLp"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TAW-ma-Lkc" firstAttribute="centerX" secondItem="uvC-EL-1kn" secondAttribute="centerX" id="T3c-1g-ybG"/>
+                            <constraint firstItem="TAW-ma-Lkc" firstAttribute="centerY" secondItem="uvC-EL-1kn" secondAttribute="centerY" id="Xpl-25-BIM"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="AX3-c3-RbW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Awt-oE-iws" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="63" y="423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="t3e-fY-cl7">
+            <objects>
+                <navigationController id="jJA-bb-Y7w" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uvO-Lh-pnr">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fwb-rM-UXC" kind="relationship" relationship="rootViewController" id="ews-ch-tGL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHd-3D-XZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-782" y="423"/>
+        </scene>
+        <!--SampleRoutingStoryboard-->
+        <scene sceneID="udf-ly-Mn1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SampleRoutingStoryboard" id="9Lw-Dx-6Sk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7HW-b3-cYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="423"/>
         </scene>
     </scenes>
 </document>
