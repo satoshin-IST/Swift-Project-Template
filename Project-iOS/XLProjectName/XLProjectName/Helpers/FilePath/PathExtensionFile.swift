@@ -1,6 +1,5 @@
 //
 //  PathExtensionFile.swift
-//  MakeupSimulator
 //  XLProjectName
 //
 //  Created by XLAuthorName

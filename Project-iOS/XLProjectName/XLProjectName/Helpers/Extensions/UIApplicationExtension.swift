@@ -30,11 +30,4 @@ extension UIApplication {
         guard let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else { fatalError() }
         return appVersion
     }
-    
-    public static func requestPermissionToShowPushNotification() {
-        let app = UIApplication.shared
-        let settings = UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil)
-        app.registerUserNotificationSettings(settings)
-        app.registerForRemoteNotifications()
-    }
 }

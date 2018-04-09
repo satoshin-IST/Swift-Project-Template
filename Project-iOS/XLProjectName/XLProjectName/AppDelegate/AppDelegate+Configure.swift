@@ -12,6 +12,11 @@ import Foundation
 
 // 初回設定系Extension
 extension AppDelegate {
+    func configure() {
+        setupNavigator()
+        //setupCrashlytics()
+        //setupGoogleAnalytics()
+    }
 //
 //    func setupCrashlytics() {
 //        Fabric.with([Crashlytics.self])
@@ -21,4 +26,7 @@ extension AppDelegate {
 //    func setupGoogleAnalytics() {
 //        // TODO:
 //    }
+    func setupNavigator() {
+        NavigateConfigurator.shared.configure()
+    }
 }

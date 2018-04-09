@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        PushNotificationModule.shared.didFinishLaunching(options: launchOptions)
 //        Log.debug("デバッグログのテスト")
 //        Log.fatal("fatale Errorのメッセージ")
-        
+        configure()
         return true
     }
 
