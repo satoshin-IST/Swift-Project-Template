@@ -41,14 +41,13 @@ final class Log {
                       function: String = #function,
                       line: Int = #line) {
         log(message, .fatal)
-        
         let fileName = file.components(separatedBy: "/").last ?? ""
         let error = NSError(
             domain: "\(fileName):\(function)",
             code: line,
             userInfo: ["message": message]
         )
-
+        log(error.description, .fatal)
         assertionFailure(message)
     }
     
