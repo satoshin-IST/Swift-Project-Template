@@ -32,6 +32,7 @@
 - [ ] Bluetooth
 - [ ] GoogleAnalytics
 - [ ] Sourcery
+- [ ] SnapKit
 
 
 ## 使い方
