@@ -14,14 +14,13 @@
 #
 
 #===Network
-github "Alamofire/Alamofire" ~> 4.7
-github "johnsundell/unbox"
+#github "Alamofire/Alamofire" ~> 4.7
 
 #===Async
-github "Thomvis/BrightFutures"
+#github "Thomvis/BrightFutures"
 
 #===Routing
-github "hyperoslo/Compass"
+#github "hyperoslo/Compass"
 
 #===UI
 github "ninjaprox/NVActivityIndicatorView"

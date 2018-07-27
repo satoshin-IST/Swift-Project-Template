@@ -13,7 +13,6 @@ import Foundation
 // 初回設定系Extension
 extension AppDelegate {
     func configure() {
-        setupNavigator()
         //setupCrashlytics()
         //setupGoogleAnalytics()
     }
@@ -26,7 +25,4 @@ extension AppDelegate {
 //    func setupGoogleAnalytics() {
 //        // TODO:
 //    }
-    func setupNavigator() {
-        NavigateConfigurator.shared.configure()
-    }
 }

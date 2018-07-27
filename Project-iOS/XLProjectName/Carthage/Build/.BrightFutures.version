@@ -1,9 +1,0 @@
-{
-  "commitish" : "6.0.1",
-  "iOS" : [
-    {
-      "name" : "BrightFutures",
-      "hash" : "61987f6b3471e1de433abd37d7d2297224b3c046223e94e72d4ce2552bc7cb15"
-    }
-  ]
-}
