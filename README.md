@@ -34,6 +34,9 @@
 - [ ] Sourcery
 - [ ] NotAutoLayout
 
+## 開発環境
+Xcode 9.4.1
+Swift 4.1.2
 
 ## 使い方
 
@@ -87,9 +90,9 @@ We are done! Now start coding your app! 🍻🍻
 | :-: | :-: | :-: | :-: | :-: | 
 | ユーティリティ (typo除去) | [R-Swift](https://github.com/mac-cain13/R.swift) | pod | ◯ | | 
 | 静的解析ツール | [SwiftLint](https://github.com/realm/SwiftLint) | pod | ◯ | [カスタムのルール](https://github.com/satoshin-IST/Swift-Project-Template/blob/develop/Project-iOS/XLProjectName/.swiftlint.yml)設定済み | 
-| 通信クライアント | [Alamofire](https://github.com/Alamofire/Alamofire) | carthage | ◯ | | 
+| 通信クライアント | [Alamofire](https://github.com/Alamofire/Alamofire) | carthage |  | | 
+| 通信クライアント | [APKit](https://github.com/ishkawa/APIKit) | carthage |  | | 
 | 画像ローダー | [Nuke](https://github.com/kean/Nuke) | carthage | ◯ | [カスタムのURLCache](https://github.com/satoshin-IST/Swift-Project-Template/blob/develop/Project-iOS/XLProjectName/XLProjectName/Helpers/ImageLoader/Cache/MoreCache.swift)を利用 | 
-| URLスキーム, 画面遷移 | [Compass](https://github.com/hyperoslo/Compass) | carthage | ◯ | [サンプル実装](https://github.com/satoshin-IST/Swift-Project-Template/blob/develop/Project-iOS/XLProjectName/XLProjectName/Controllers/SampleViewControllers.swift)を組み込み済み | 
 | テスト | [Quick](https://github.com/Quick/Quick) | carthage | ◯ | | 
 | テスト | [Nimble](https://github.com/Quick/Nimble) | carthage | ◯ | | 
 | ユーティリティ | [Swift-Date](https://github.com/malcommac/SwiftDate) | carthage  | ◯ | | 
@@ -102,5 +105,4 @@ We are done! Now start coding your app! 🍻🍻
 | Push通知(他) | [aws/aws-sdk-ios](https://github.com/aws/aws-sdk-ios) | carthage  | | | 
 | DB | [RealmSwift](https://realm.io/docs/swift/latest) | carthage  | | | 
 | UI(ローディングインジケータ) | [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView) | carthage  | ◯ | デザイン要確認 | 
-| 非同期処理 | [BrightFutures](https://github.com/Thomvis/BrightFutures) | carthage  | ◯ |  | 
 | リアクティブ | [RxSwift](https://github.com/ReactiveX/RxSwift) | carthage  | |  | 
