@@ -32,7 +32,7 @@
 - [ ] Bluetooth
 - [ ] GoogleAnalytics
 - [ ] Sourcery
-- [ ] SnapKit
+- [ ] NotAutoLayout
 
 
 ## 使い方
