@@ -1,9 +1,9 @@
 {
-  "commitish" : "3.0.3",
+  "commitish" : "3.1.0",
   "iOS" : [
     {
       "name" : "Device",
-      "hash" : "c4076fbec651815cdeac8a45d29a6b983a48547e9e950d59e8adc42e1dce74c5"
+      "hash" : "c6c17790a9ad6519d72402ea7e2da2b7f89d0322b33c6f610c8f03df446c2dd5"
     }
   ]
 }

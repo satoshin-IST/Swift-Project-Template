@@ -8,11 +8,10 @@
 
 import Foundation
 import UIKit
-import Compass
 
 extension AppDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) -> Bool {
-        try? Navigator.navigate(url: url)
+        //TOOD: URLスキーム対応
         return true
     }
 }
