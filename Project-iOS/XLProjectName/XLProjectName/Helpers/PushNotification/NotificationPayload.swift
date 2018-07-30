@@ -7,38 +7,22 @@
 //
 
 import Foundation
-//import Unbox
 
-struct NotificationPayload {
+public struct NotificationPayload {
     
-//    private var aps: NotificationAPS
+    private (set) var aps: NotificationAPS?
     
     init?(userInfo: [AnyHashable: Any]) {
-//        guard let apsDic = userInfo["aps"] as? UnboxableDictionary else {
+        do {
+            guard let dict = userInfo["aps"] else {
+                return nil
+            }
+            // MEMO: json変換時のオーバーヘッドが気になる場合はMoreCodableのDictionaryEncoder/Decoder的なものを実装して利用する
+            // https://bit.ly/2vnHMhR  https://bit.ly/2LNZtRJ
+            let json = try JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted)
+            self.aps = try JSONDecoder().decode(NotificationAPS.self, from: json)
+        } catch {
             return nil
-//        }
-//        do {
-//            self.aps = try unbox(dictionary: apsDic)
-//
-//        } catch {
-//            return nil
-//
-//        }
+        }
     }
 }
-
-//struct NotificationAPS: Unboxable {
-//    var alert: String
-//    var sound: String
-//    var contentAvailable: Int
-//    var priority: Int
-//    var badge: Int
-//
-//    init(unboxer: Unboxer) throws {
-//        self.alert = try unboxer.unbox(key: "alert")
-//        self.sound = try unboxer.unbox(key: "sound")
-//        self.contentAvailable = try unboxer.unbox(key: "content-available")
-//        self.priority = try unboxer.unbox(key: "priority")
-//        self.badge = try unboxer.unbox(key: "badge")
-//    }
-//}
