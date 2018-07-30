@@ -42,7 +42,7 @@ class NotificationPayloadTests: XCTestCase {
     
     func test_Userinfo内にキーが存在ない場合はPayloadの生成は成功するがプロパティ呼び出しでnilが返ってくること() {
         let userInfo: [AnyHashable: Any] = ["id": 1234, "aps": [
-            "alert": ["body": "alertのbody", "title": "alertのtitle"],
+            "alert": ["body": "alertのbody", "title": "alertのtitle"]
             ]
         ]
         
