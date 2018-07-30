@@ -30,9 +30,12 @@
 		226D8FB22068CAF300A341BB /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226D8FB12068CAF200A341BB /* NVActivityIndicatorView.framework */; };
 		226D8FB42068CB0000A341BB /* Device.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226D8FB32068CB0000A341BB /* Device.framework */; };
 		227872992075E7D10098B12C /* SampleViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227872982075E7D10098B12C /* SampleViewControllers.swift */; };
+		227C8906210EB169003CB08C /* NotificationPayloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227C8905210EB169003CB08C /* NotificationPayloadTests.swift */; };
 		22A269352011BB890040513E /* AppDelegate+PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A269342011BB890040513E /* AppDelegate+PushNotification.swift */; };
 		22A66718207B45570050150B /* AppDelegate+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A66717207B45570050150B /* AppDelegate+URL.swift */; };
 		22B5E9422075B4C8009585C3 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B5E9412075B4C8009585C3 /* Routes.swift */; };
+		22B7D84A210B0354004A3592 /* NotificationAPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B7D849210B0354004A3592 /* NotificationAPS.swift */; };
+		22B7D84C210B0360004A3592 /* NotificationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B7D84B210B0360004A3592 /* NotificationAlert.swift */; };
 		22C05E1B206A1F9500146EFD /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C05E17206A1F9400146EFD /* Path.swift */; };
 		22C05E1C206A1F9500146EFD /* PathResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C05E18206A1F9400146EFD /* PathResult.swift */; };
 		22C05E1D206A1F9500146EFD /* PathExtensionDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C05E19206A1F9500146EFD /* PathExtensionDir.swift */; };
@@ -103,6 +106,7 @@
 		226D8FB32068CB0000A341BB /* Device.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Device.framework; path = Carthage/Build/iOS/Device.framework; sourceTree = "<group>"; };
 		226D8FB72068CB1B00A341BB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		227872982075E7D10098B12C /* SampleViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewControllers.swift; sourceTree = "<group>"; };
+		227C8905210EB169003CB08C /* NotificationPayloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPayloadTests.swift; sourceTree = "<group>"; };
 		229827E220761D92004510CC /* Compass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Compass.framework; path = Carthage/Build/iOS/Compass.framework; sourceTree = "<group>"; };
 		229B3782206A2C3F0013DD82 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		229B3783206A2C3F0013DD82 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 		22ADF8C72011C2F400BEA216 /* Config.Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Adhoc.xcconfig; sourceTree = "<group>"; };
 		22ADF8CB2011C31E00BEA216 /* Config.Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Release.xcconfig; sourceTree = "<group>"; };
 		22B5E9412075B4C8009585C3 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		22B7D849210B0354004A3592 /* NotificationAPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAPS.swift; sourceTree = "<group>"; };
+		22B7D84B210B0360004A3592 /* NotificationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlert.swift; sourceTree = "<group>"; };
 		22C05E17206A1F9400146EFD /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		22C05E18206A1F9400146EFD /* PathResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathResult.swift; sourceTree = "<group>"; };
 		22C05E19206A1F9500146EFD /* PathExtensionDir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathExtensionDir.swift; sourceTree = "<group>"; };
@@ -175,6 +181,8 @@
 			children = (
 				071FBD6C202840BA005F0D96 /* PushNotificationModule.swift */,
 				071FBD6E202843D2005F0D96 /* NotificationPayload.swift */,
+				22B7D849210B0354004A3592 /* NotificationAPS.swift */,
+				22B7D84B210B0360004A3592 /* NotificationAlert.swift */,
 			);
 			path = PushNotification;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 				2244D34D206DD42B00622A77 /* HTTPURLResponseExtensionsTests.swift */,
 				223B487C2071D7C7006061EA /* ImageLoaderTests.swift */,
 				2244D34B206DD08300622A77 /* MoreCacheTests.swift */,
+				227C8905210EB169003CB08C /* NotificationPayloadTests.swift */,
 				2233E9472021923300CFE6A3 /* RealmTests.swift */,
 				2233E92F202190C200CFE6A3 /* XLProjectNameTests.swift */,
 			);
@@ -705,6 +714,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				223B487D2071D7C7006061EA /* ImageLoaderTests.swift in Sources */,
+				227C8906210EB169003CB08C /* NotificationPayloadTests.swift in Sources */,
 				2244D34E206DD42B00622A77 /* HTTPURLResponseExtensionsTests.swift in Sources */,
 				2244D34C206DD08300622A77 /* MoreCacheTests.swift in Sources */,
 				2233E930202190C200CFE6A3 /* XLProjectNameTests.swift in Sources */,
@@ -749,8 +759,10 @@
 				2244D34A206CA48A00622A77 /* HTTPURLResponse+Header.swift in Sources */,
 				2867E82B1C74C7D400FCEBBD /* AppDelegate.swift in Sources */,
 				07643DEE20512F0200986CA9 /* BundleExtension.swift in Sources */,
+				22B7D84C210B0360004A3592 /* NotificationAlert.swift in Sources */,
 				22C05E25206A2A0F00146EFD /* LoadingIndicatorService.swift in Sources */,
 				8F0759A41D774C5C0012D681 /* AppDelegate+Configure.swift in Sources */,
+				22B7D84A210B0354004A3592 /* NotificationAPS.swift in Sources */,
 				22C05E1B206A1F9500146EFD /* Path.swift in Sources */,
 				225A6EC12022AF170081DAD8 /* RealmHelper.swift in Sources */,
 			);

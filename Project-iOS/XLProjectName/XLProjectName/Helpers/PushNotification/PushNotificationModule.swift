@@ -77,7 +77,7 @@ struct PushNotificationModule {
             return
         }
         
-        launchingStateBehavior(with: payload)
+        launch(with: payload)
     }
     
     /// push通知受信
@@ -93,9 +93,10 @@ struct PushNotificationModule {
         }
         
         switch application.applicationState {
-        case .active: activeStateBehavior(with: payload)
-        case .inactive: inActiveStateBehavior(with: payload)
-        case .background: return
+        case .active:
+            active(with: payload)
+        case .inactive, .background:
+            inActive(with: payload)
         }
     }
     
@@ -112,16 +113,16 @@ struct PushNotificationModule {
 
 // MARK: - Behavior for each activation state
 extension PushNotificationModule {
-    fileprivate func launchingStateBehavior(with payload: NotificationPayload) {
+    fileprivate func launch(with payload: NotificationPayload) {
         // 起動時にpushがあった場合の処理
     }
     
-    fileprivate func inActiveStateBehavior(with payload: NotificationPayload) {
+    fileprivate func inActive(with payload: NotificationPayload) {
         // アプリの操作などができない状態からpushを受け取った時の処理
     }
     
-    fileprivate func activeStateBehavior(with payload: NotificationPayload) {
-        // アプリ起動時にpushを受け取った時の処理
+    fileprivate func active(with payload: NotificationPayload) {
+        // アプリ起動中にpushを受け取った時の処理
     }
 }
 
