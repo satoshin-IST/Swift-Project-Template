@@ -20,19 +20,18 @@
 - [x] ビルド最適化(Optimization Level, Swift Other Flags)
 - [x] xcconfig & schemeによる環境切り分け
 - [x] HTTPレスポンスヘッダの有効期限に従う画像ローダーのキャッシュ設定
-- [x] URLスキーム・画面遷移用ルーティング
+- [ ] URLスキーム・画面遷移用ルーティング
+- [ ] GoogleAnalytics
+- [ ] Fastlane, EMLauncher
+- [ ] Bluetooth
 - [ ] Jazzy
 - [ ] Swagger
-- [ ] Fastlane, EMLauncher
 - [ ] Danger
 - [ ] Peek
-- [ ] Playground Driven Development
 - [ ] FBSnapshotTestCase
 - [ ] シェル実行時にプライバシー関連の質問でPlistを更新
-- [ ] Bluetooth
-- [ ] GoogleAnalytics
-- [ ] Sourcery
 - [ ] NotAutoLayout
+- [ ] Siren
 
 ## 開発環境
 Xcode 9.4.1
