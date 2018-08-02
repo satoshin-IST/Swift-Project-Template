@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		222DB5642011B7BB0013304C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DB5632011B7BB0013304C /* main.swift */; };
-		222DB5712011B8030013304C /* SkeltonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DB5702011B8030013304C /* SkeltonTests.swift */; };
+		222DB5712011B8030013304C /* BootstrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DB5702011B8030013304C /* BootstrapTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		222DB5602011B7BB0013304C /* Skelton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Skelton; sourceTree = BUILT_PRODUCTS_DIR; };
+		222DB5602011B7BB0013304C /* Bootstrap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bootstrap; sourceTree = BUILT_PRODUCTS_DIR; };
 		222DB5632011B7BB0013304C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		222DB56E2011B8030013304C /* SkeltonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkeltonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		222DB5702011B8030013304C /* SkeltonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeltonTests.swift; sourceTree = "<group>"; };
+		222DB56E2011B8030013304C /* BootstrapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BootstrapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		222DB5702011B8030013304C /* BootstrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootstrapTests.swift; sourceTree = "<group>"; };
 		222DB5722011B8030013304C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,8 +52,8 @@
 		222DB5572011B7BB0013304C = {
 			isa = PBXGroup;
 			children = (
-				222DB5622011B7BB0013304C /* Skelton */,
-				222DB56F2011B8030013304C /* SkeltonTests */,
+				222DB5622011B7BB0013304C /* Bootstrap */,
+				222DB56F2011B8030013304C /* BootstrapTests */,
 				222DB5612011B7BB0013304C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,35 +61,35 @@
 		222DB5612011B7BB0013304C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				222DB5602011B7BB0013304C /* Skelton */,
-				222DB56E2011B8030013304C /* SkeltonTests.xctest */,
+				222DB5602011B7BB0013304C /* Bootstrap */,
+				222DB56E2011B8030013304C /* BootstrapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		222DB5622011B7BB0013304C /* Skelton */ = {
+		222DB5622011B7BB0013304C /* Bootstrap */ = {
 			isa = PBXGroup;
 			children = (
 				222DB5632011B7BB0013304C /* main.swift */,
 			);
-			path = Skelton;
+			path = Bootstrap;
 			sourceTree = "<group>";
 		};
-		222DB56F2011B8030013304C /* SkeltonTests */ = {
+		222DB56F2011B8030013304C /* BootstrapTests */ = {
 			isa = PBXGroup;
 			children = (
-				222DB5702011B8030013304C /* SkeltonTests.swift */,
+				222DB5702011B8030013304C /* BootstrapTests.swift */,
 				222DB5722011B8030013304C /* Info.plist */,
 			);
-			path = SkeltonTests;
+			path = BootstrapTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		222DB55F2011B7BB0013304C /* Skelton */ = {
+		222DB55F2011B7BB0013304C /* Bootstrap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 222DB5672011B7BB0013304C /* Build configuration list for PBXNativeTarget "Skelton" */;
+			buildConfigurationList = 222DB5672011B7BB0013304C /* Build configuration list for PBXNativeTarget "Bootstrap" */;
 			buildPhases = (
 				222DB55C2011B7BB0013304C /* Sources */,
 				222DB55D2011B7BB0013304C /* Frameworks */,
@@ -99,14 +99,14 @@
 			);
 			dependencies = (
 			);
-			name = Skelton;
+			name = Bootstrap;
 			productName = Skelton;
-			productReference = 222DB5602011B7BB0013304C /* Skelton */;
+			productReference = 222DB5602011B7BB0013304C /* Bootstrap */;
 			productType = "com.apple.product-type.tool";
 		};
-		222DB56D2011B8030013304C /* SkeltonTests */ = {
+		222DB56D2011B8030013304C /* BootstrapTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 222DB5732011B8030013304C /* Build configuration list for PBXNativeTarget "SkeltonTests" */;
+			buildConfigurationList = 222DB5732011B8030013304C /* Build configuration list for PBXNativeTarget "BootstrapTests" */;
 			buildPhases = (
 				222DB56A2011B8030013304C /* Sources */,
 				222DB56B2011B8030013304C /* Frameworks */,
@@ -116,9 +116,9 @@
 			);
 			dependencies = (
 			);
-			name = SkeltonTests;
+			name = BootstrapTests;
 			productName = SkeltonTests;
-			productReference = 222DB56E2011B8030013304C /* SkeltonTests.xctest */;
+			productReference = 222DB56E2011B8030013304C /* BootstrapTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 222DB55B2011B7BB0013304C /* Build configuration list for PBXProject "Skelton" */;
+			buildConfigurationList = 222DB55B2011B7BB0013304C /* Build configuration list for PBXProject "Bootstrap" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -153,8 +153,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				222DB55F2011B7BB0013304C /* Skelton */,
-				222DB56D2011B8030013304C /* SkeltonTests */,
+				222DB55F2011B7BB0013304C /* Bootstrap */,
+				222DB56D2011B8030013304C /* BootstrapTests */,
 			);
 		};
 /* End PBXProject section */
@@ -182,7 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				222DB5712011B8030013304C /* SkeltonTests.swift in Sources */,
+				222DB5712011B8030013304C /* BootstrapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,9 +318,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SkeltonTests/Info.plist;
+				INFOPLIST_FILE = Bootstrap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.i-studio.SkeltonTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.i-studio.BootstrapTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -331,9 +331,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SkeltonTests/Info.plist;
+				INFOPLIST_FILE = Bootstrap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.i-studio.SkeltonTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.i-studio.BootstrapTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -342,7 +342,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		222DB55B2011B7BB0013304C /* Build configuration list for PBXProject "Skelton" */ = {
+		222DB55B2011B7BB0013304C /* Build configuration list for PBXProject "Bootstrap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				222DB5652011B7BB0013304C /* Debug */,
@@ -351,7 +351,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		222DB5672011B7BB0013304C /* Build configuration list for PBXNativeTarget "Skelton" */ = {
+		222DB5672011B7BB0013304C /* Build configuration list for PBXNativeTarget "Bootstrap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				222DB5682011B7BB0013304C /* Debug */,
@@ -360,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		222DB5732011B8030013304C /* Build configuration list for PBXNativeTarget "SkeltonTests" */ = {
+		222DB5732011B8030013304C /* Build configuration list for PBXNativeTarget "BootstrapTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				222DB5742011B8030013304C /* Debug */,
