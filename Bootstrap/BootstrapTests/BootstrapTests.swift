@@ -1,14 +1,14 @@
 //
-//  SkeltonTests.swift
-//  SkeltonTests
+//  BootstrapTests.swift
+//  BootstrapTests
 //
-//  Created by 佐藤 慎 on 2018/01/19.
+//  Created on 2018/01/19.
 //  Copyright © 2018年 i-studio development team. All rights reserved.
 //
 
 import XCTest
 
-class SkeltonTests: XCTestCase {
+class BootstrapTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
