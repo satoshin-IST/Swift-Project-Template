@@ -1,6 +1,6 @@
 # Swift-Project-Template
 
-`Skelton.swif`を実行してiOS用各種設定が構築済みのプロジェクトを生成できます。
+`Bootstrap.swif`を実行してiOS用テンプレートプロジェクトを生成します。
 
 <p align="left">
 <img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
@@ -34,8 +34,8 @@
 - [ ] Siren
 
 ## 開発環境
-Xcode 9.4.1
-Swift 4.1.2
+* Xcode 9.4.1
+* Swift 4.1.2
 
 ## 使い方
 
