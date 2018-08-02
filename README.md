@@ -45,10 +45,10 @@ git clone
 git clone git@github.com:satoshin-IST/Swift-Project-Template.git
 ```
 
-Run `Skelton.swift` script
+Run `bootstrap.swift` script
 
 ```swift
-swift ./Skelton
+swift ./bootstrap.swift
 ```
 
 Answer some questions:
