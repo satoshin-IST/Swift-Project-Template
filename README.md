@@ -15,7 +15,7 @@
 - [x] 標準ライブラリ自動インストール(メイン:Carthage, サブ:CocoaPod)
 - [x] SwiftLint
 - [x] R-Swift
-- [x] Push通知用モジュール
+- [ ] Push通知用モジュール
 - [x] RealmSwift用モジュール
 - [x] ビルド最適化(Optimization Level, Swift Other Flags)
 - [x] xcconfig & schemeによる環境切り分け
